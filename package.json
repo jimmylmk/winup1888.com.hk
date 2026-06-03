@@ -12,7 +12,9 @@
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "lint": "cross-env NODE_OPTIONS=--no-deprecation eslint .",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
-    "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
   },
   "dependencies": {
     "@payloadcms/db-sqlite": "^3.0.0",
@@ -29,12 +31,14 @@
     "sharp": "^0.34.2"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.19.11",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "wrangler": "^4.97.0"
   },
   "engines": {
     "node": ">=20.0.0"
