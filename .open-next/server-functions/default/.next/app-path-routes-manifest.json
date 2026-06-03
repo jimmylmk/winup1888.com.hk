@@ -1,12 +1,12 @@
 {
   "/_not-found/page": "/_not-found",
-  "/my-route/route": "/my-route",
-  "/(payload)/api/graphql/route": "/api/graphql",
-  "/(payload)/api/graphql-playground/route": "/api/graphql-playground",
   "/(payload)/api/[...slug]/route": "/api/[...slug]",
-  "/(frontend)/[locale]/inquiry/page": "/[locale]/inquiry",
-  "/(frontend)/[locale]/[slug]/page": "/[locale]/[slug]",
+  "/(payload)/api/graphql-playground/route": "/api/graphql-playground",
+  "/(payload)/api/graphql/route": "/api/graphql",
+  "/my-route/route": "/my-route",
   "/(frontend)/[locale]/page": "/[locale]",
+  "/(frontend)/[locale]/[slug]/page": "/[locale]/[slug]",
   "/(frontend)/[locale]/services/[slug]/page": "/[locale]/services/[slug]",
+  "/(frontend)/[locale]/inquiry/page": "/[locale]/inquiry",
   "/(payload)/admin/[[...segments]]/page": "/admin/[[...segments]]"
 }
