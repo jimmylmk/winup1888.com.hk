@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/my-route/route": "app/my-route/route.js",
+  "/(payload)/api/graphql/route": "app/(payload)/api/graphql/route.js",
+  "/(payload)/api/graphql-playground/route": "app/(payload)/api/graphql-playground/route.js",
+  "/(payload)/api/[...slug]/route": "app/(payload)/api/[...slug]/route.js",
+  "/(frontend)/[locale]/inquiry/page": "app/(frontend)/[locale]/inquiry/page.js",
+  "/(frontend)/[locale]/[slug]/page": "app/(frontend)/[locale]/[slug]/page.js",
+  "/(frontend)/[locale]/page": "app/(frontend)/[locale]/page.js",
+  "/(frontend)/[locale]/services/[slug]/page": "app/(frontend)/[locale]/services/[slug]/page.js",
+  "/(payload)/admin/[[...segments]]/page": "app/(payload)/admin/[[...segments]]/page.js"
+}

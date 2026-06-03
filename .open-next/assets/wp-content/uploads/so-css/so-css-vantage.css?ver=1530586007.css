@@ -1,0 +1,16 @@
+.read-more-state ~ .read-more-trigger:before {
+  content: '查看更多';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: '隱藏資訊';
+}
+
+#homepage-banner {
+    margin-bottom: 40px;
+}
+
+
+div#corporate-services-banner {
+    padding: 100px 0 !important;
+}

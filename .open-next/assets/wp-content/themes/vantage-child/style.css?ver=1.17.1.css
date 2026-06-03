@@ -1,0 +1,1994 @@
+/*
+ Theme Name:   Vantage Child
+ Template:     vantage
+*/
+
+/*PC & Mobile*/
+@media only screen and (min-width:1000px) {
+    .mobile-slide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .pc-slide {
+        display: none;
+    }
+}
+
+
+/* Header Width
+----------------------------------------------------------*/
+body.responsive.layout-full #page-wrapper .full-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+select#lang_choice_polylang-3 {
+    border: none !important;
+    border-bottom: 1px solid #919191;
+    background-color: transparent;
+    width: 100px;
+}
+
+aside#polylang-3 {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hrader-tel {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #002b66;
+}
+
+div#header-sidebar>aside>div>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Layout Builder*/
+
+div#pg-w5a9517870130b-0 {
+    width: 350px;
+}
+
+#masthead .widget_polylang ul li {
+    float: inherit;
+}
+
+#pgc-w5b24cc5e4da2c-0-0 {
+    margin-bottom: 10px !important;
+}
+
+/* Header */
+
+@media only screen and (min-width:700px) {
+    div#hin-1 {
+        display: -webkit-box;
+    }
+
+    div#header-sidebar .widget_text {
+        width: 250px !important;
+    }
+}
+
+
+div#hin-1>div {
+    width: 150px !important;
+}
+
+div#hin-1 {
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#hin-1 div {
+    margin-bottom: 0px !important;
+}
+
+/* Logo Height
+----------------------------------------------------------*/
+img.logo-height-constrain {
+    max-height: 70px !important;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Menu Text Style
+----------------------------------------------------------*/
+.main-navigation ul ul a {
+    width: 260px;
+}
+
+.main-navigation a {
+    font-weight: 400;
+}
+
+.main-navigation {
+    z-index: 800;
+}
+
+ul#menu-primary a {
+    text-decoration: none;
+}
+
+ul#mobile-nav-item-wrap-1>li {
+    float: right;
+}
+
+/* Hover */
+
+ul#menu-primary>li.menu-item-has-children>a::after {
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    padding-left: 10px;
+    float: right;
+}
+
+ul#menu-primary>li.menu-item-has-children:hover>a::after {
+    content: "\f106";
+    font: normal normal normal 14px/1 FontAwesome;
+    padding-left: 10px;
+    float: right;
+}
+
+/* Sub Menu*/
+
+ul.sub-menu>li.menu-item-has-children>a::after {
+    content: "\f105";
+    font: normal normal normal 14px/1 FontAwesome;
+    padding-left: 10px;
+    float: right;
+}
+
+ul.sub-menu a:hover {
+    padding-left: 40px;
+}
+
+/* Shopping Cart */
+li#menu-item-2011>a:hover {
+    background: #182f8a !important;
+}
+
+li#menu-item-2011>a:hover>i {
+    color: #91d401 !important;
+}
+
+
+/* Footer Style
+----------------------------------------------------------*/
+/* Footer Weight */
+//@media (min-width: 1400px){
+div#footer {
+    margin: 0 -100px;
+}
+}
+
+@media (max-width: 1400px) {
+    #footer .uk-first-column {
+        padding: 10px;
+    }
+}
+
+/*ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© 2017 Accolade*/
+#colophon #theme-attribution,
+#colophon #site-info {
+    margin-top: 0px;
+}
+
+div#site-info,
+div#theme-attribution {
+    font-weight: 100;
+}
+
+/* Footer information */
+div#footer-widgets h2 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+div#footer-widgets h3 {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+}
+
+div#footer-widgets p {
+    margin: 5px 0;
+    font-weight: 100;
+}
+
+
+font.contact {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+/* Address */
+.footer-address {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Social Platforms Icon */
+.contact-button {
+    border: none;
+    padding: 13px 0;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+
+.contact-button:hover {
+    background: #91D401;
+}
+
+.facebook-icon {
+    background: #3C599F;
+    color: #FFF;
+    padding: 7px 13px;
+}
+
+.twitter-icon {
+    background: #33CAFD;
+    color: #FFF;
+    padding: 7px 8px;
+}
+
+.googleplus-icon {
+    background: #DA4C3A;
+    color: #FFF;
+    padding: 7px 4px;
+}
+
+.linkedin-icon {
+    background: #00AEEE;
+    color: #FFF;
+    padding: 7px 9px;
+}
+
+.weibo-icon {
+    background: #FD0001;
+    color: #FFF;
+    padding: 7px 8px;
+}
+
+
+
+/* All Page Font
+----------------------------------------------------------*/
+p {
+    font-weight: 200;
+    line-height: 2;
+}
+
+* {
+    font-family: "Montserrat", Sans-serif;
+}
+
+/* Homr Page Banner
+----------------------------------------------------------*/
+body.home #main {
+    background: #fcfcfc;
+}
+
+/* All Banner Height */
+@media (max-width: 1000px) {
+    div#banner-slider {
+        margin: 0 -10px;
+    }
+}
+
+.banner-layout.panel-row-style {
+    height: 400px;
+    align-self: center;
+}
+
+/* All Banner */
+div#banner-center div,
+.banner-layout div {
+    align-self: center !important;
+}
+
+
+/* Text Style */
+div#banner-layout h2 {
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+
+p.companyname {
+    letter-spacing: 10px;
+}
+
+div#banner-layout h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+div#banner-layout h3 {
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-weight: 200;
+}
+
+div#banner-layout p {
+    font-weight: 200;
+}
+
+#banner-slider p.style-four {
+    width: 70px;
+    border-bottom: 4px solid #1a75ed;
+}
+
+/* Button Style */
+div#banner-layout .banner-button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+div#banner-layout .banner-button:hover {
+    background: #91D401;
+    border: 1px solid #91D401 !important;
+}
+
+.button1 {
+    background: #002B66;
+}
+
+.button2 {
+    background: transparent;
+    border: 1px solid #FFF !important;
+}
+
+.button3 {
+    background: #51C0D4;
+}
+
+.button4 {
+    background: #1776ED;
+}
+
+
+
+
+/* Service Photo (Below Banner)
+----------------------------------------------------------*/
+/*Service 1/3 */
+@media (min-width: 640px) {
+    .uk-child-width-1-3\@s>* {
+        width: calc(100% * 1 / 3);
+        padding: 0 10px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .servicebox.uk-scrollspy-inview {
+        margin-top: -2px;
+    }
+}
+
+.uk-grid {
+    margin: 0 -10px;
+}
+
+/* Photo Size & Color */
+div#service-button .uk-grid>* {
+    padding: 1px;
+    margin: px;
+}
+
+div#service-button img {
+    -webkit-filter: brightness(.7);
+}
+
+/* Text Style */
+div#service-button .uk-position-center {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+/* Photo Hover */
+.uk-overlay-default {
+    background: #222222b0;
+}
+
+
+/* Service-button */
+a.service-button {
+    background: #1776ED;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+a.service-button:hover {
+    background: #91D401;
+    border: 1px solid #91D401 !important;
+    color: #fff !important;
+}
+
+
+/* Service Information
+----------------------------------------------------------*/
+.uk-grid-small>* {
+    padding: 20px;
+}
+
+/* Switcher & Tab Style*/
+ul.uk-tab {
+    min-width: 383px;
+}
+
+div#service-plan li {
+    list-style: none;
+}
+
+li.uk-active {
+    margin: 0 !important;
+}
+
+.uk-tab>*>a {
+    border-bottom: 2px solid transparent;
+}
+
+.uk-tab>.uk-active>a {
+    background-color: #1E87F2;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    margin-left: 20px;
+}
+
+/* Tab Name*/
+.entry-content ul li,
+.entry-content ol li {
+    margin-left: 0;
+}
+
+
+
+/* Headline */
+p.style-four {
+    width: 40px;
+    border-bottom: 2px solid #002B66;
+}
+
+h1.title {
+    color: #002B66;
+    font-size: 27px;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+
+h2.subtitle {
+    color: #1776ED;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+
+/* Service Information Header */
+.uk-card-header {
+    background-color: #1876ED;
+    border-radius: 10px 10px 0 0;
+}
+
+div#service-plan h3.uk-card-title {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 400;
+    height: 56px;
+}
+
+#trademark h3.uk-card-title {
+    height: 26px;
+}
+
+#service-plan .uk-card-header p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Service Information Body */
+#service-plan .uk-card-body {
+    color: #5B5B5E;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#trademark .uk-card-body {
+    height: 200px;
+}
+
+#service-plan .uk-card-body p {
+    margin-top: 10px;
+}
+
+#service-plan .uk-card-body {
+    height: 290px;
+    background-color: #f0f0f0;
+}
+
+
+/* Service Information Footer */
+#service-plan .uk-card-footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 30px;
+}
+
+.more {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Buy Button */
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background: #00257B;
+    border: none;
+    color: white;
+    padding: 20px 52px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 100;
+    margin-bottom: 10px;
+
+}
+
+/* CSS submit button weird rendering on iPad/iPhone */
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input.wspsc_add_cart_submit:hover {
+    background: #91D401;
+}
+
+/* Home Page - Mobile
+----------------------------------------------------------*/
+
+@media only screen and (max-width:700px) {
+
+    /* Header Widget */
+    div#pg-w5a9517870130b-0 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Banner */
+    div#homepage-banner {
+        margin: -40px;
+        padding: 0px !important;
+    }
+
+    .sow-slider-image-wrapper {
+        padding: 30px 0 !important;
+    }
+
+    .uk-card.uk-scrollspy-inview.uk-animation-fade.uk-first-column {
+        padding: 0px;
+    }
+
+    div#banner-layout h2 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    div#banner-layout h1 {
+        font-size: 30px;
+    }
+
+    div#banner-layout p {
+        font-weight: 400;
+    }
+
+    /* Banner:below Services Button */
+    div#homepage-services {
+        padding: 0 !important;
+    }
+
+    /* Contact */
+    #contact-background h1 {
+        font-size: 24px !important;
+    }
+
+    div#contact-background {
+        padding: 10px !important;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    div#pg-w5a9517870130b-0 {
+        margin-left: -25px;
+    }
+
+    /* Services Plan tab */
+    ul.uk-tab {
+        margin-left: -40px;
+    }
+}
+
+
+
+/* Home Contact
+----------------------------------------------------------*/
+/* Backgroung image */
+@media (min-width: 640px) {
+    #contact-background {
+        background-image: url(../../uploads/2017/12/contact-background.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+div#contact-background {
+    background-color: #012F5E;
+    height: 400px;
+    margin-bottom: -40px;
+}
+
+/* Text Center */
+div#pgc-6-3-0,
+div#pgc-2735-3-0 {
+    align-self: center;
+}
+
+#contact-background i.fa.fa-volume-control-phone {
+    margin-right: 10px;
+    /* Rotate div */
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(-30deg);
+    /* Firefox */
+    -webkit-transform: rotate(-30deg);
+    /* Safari å’Œ Chrome */
+    -o-transform: rotate(-30deg);
+    /* Opera */
+}
+
+
+#contact-background h1 {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+
+/* Inpage Banner
+----------------------------------------------------------*/
+
+#download-button a {
+    background-color: #182f8a;
+    padding: 20px 50px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+#download-button a:hover {
+    background-color: #91D401
+}
+
+/* About Banner*/
+
+div#corporate-services-banner {
+    max-width: 3000px !important;
+    padding: 100px 0 !important;
+}
+
+#about-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../uploads/2017/12/shutterstock_306860177-1.jpg) !important;
+    margin-top: -35px;
+    padding: 100px 0;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* Corporate Services Banner*/
+#corporate-services-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../uploads/2017/12/shutterstock_374127247-1.jpg);
+    margin-top: -35px;
+    padding: 100px 0;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 500px) {
+    div#corporate-services-banner {
+        padding: 100px 0 !important;
+    }
+}
+
+#inpage-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../uploads/2017/12/accolade-banner01.jpg);
+    margin-top: -35px;
+    padding: 60px 0;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 700px) {
+    h1.page-title {
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    div#project-title h1.page-title {
+        margin-top: 300px;
+    }
+
+    #inpage-banner {
+        padding: 100px 0;
+    }
+
+    h1.page-title {
+        margin-top: 0px;
+        font-size: 45px;
+    }
+
+    div#inpage-background {
+        padding: 260px;
+    }
+}
+
+
+h1.page-title {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+font.page-title {
+    padding: 0 20px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+p#banner {
+    text-align: center;
+}
+
+
+/* About
+----------------------------------------------------------*/
+/* Information Center */
+#pgc-85-2-1 {
+    align-self: center !important;
+}
+
+/* List Style*/
+div#aboutpage li {
+    list-style: initial;
+    margin-top: 10px;
+}
+
+
+div#aboutpage i.fa-angle-right {
+    color: #FFF;
+}
+
+.fa-angle-right:before {
+    padding-right: 15px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+
+.fa.fa-arrow-circle-right {
+    padding-left: 0px;
+    float: left;
+    padding-bottom: 1px;
+    margin-top: 4px;
+}
+
+.fa-arrow-circle-right:before {
+    padding-right: 15px;
+    color: #1776ED;
+}
+
+
+div#aboutpage i {
+    margin: 10px 0;
+}
+
+/* Text Style */
+div#aboutus h1,
+div#aboutus h3,
+div#aboutus p {
+    /*text-align: center;*/
+}
+
+@media only screen and (max-width:700px) {
+    div#aboutus h1 {
+        font-size: 25px !important;
+    }
+}
+
+
+div#aboutus h1 {
+    font-weight: 400;
+    color: #1776ED;
+    font-size: 35px;
+    letter-spacing: 6px;
+}
+
+div#aboutus h3 {
+    font-weight: 400;
+    color: #012F5E;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+div#aboutus p {
+    font-weight: 400;
+    color: #76828a;
+    letter-spacing: 0px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+div#aboutpage h2 {
+    color: #1776ED;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+
+div#aboutpage i.fa,
+div#aboutpage-background i.fa {
+    //padding-left: 15px;
+    display: flex;
+}
+
+/* About Background Text*/
+#aboutpage-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../uploads/2017/12/shutterstock_579904507.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (min-width: 1200px) {
+    .uk-child-width-1-4\@l>* {
+        padding-right: 20px;
+    }
+}
+
+
+div#aboutpage-background h2,
+div#aboutpage-background p {
+    padding-bottom: 20px;
+}
+
+i.fa.fa-angle-right.uk-grid-margin {
+    margin-top: 10px;
+}
+
+div#aboutpage-background p.style-four {
+    width: 50px;
+    border-bottom: 2px solid #fff;
+}
+
+
+
+div#aboutpage img {
+    height: 30px;
+    padding-right: 15px;
+}
+
+
+/* TimeLine Style */
+h2.cd-timeline-item-title,
+.cd-timeline-content {
+    color: #fff;
+}
+
+.cd-timeline-img {
+    box-shadow: none;
+}
+
+#cd-timeline::before {
+    margin-top: 20px;
+}
+
+h2.uk-modal-title {
+    letter-spacing: 10px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 700px) {
+    h2.uk-modal-title {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+#cd-timeline::before {
+    width: 2px !important;
+}
+
+/* TM TimeLine Style */
+
+.tm_timeline.tm_timeline-layout-vertical.tm_timeline-layout-vertical-chessOrder {
+    border-top: 1px solid #eeeeee;
+}
+
+.tm_timeline-layout-vertical-chessOrder .tm_timeline__tense {
+    width: 1px !important;
+    margin-top: 10px !important;
+}
+
+.tm_timeline__event__dot {
+    background: #91d401;
+}
+
+/* Modal Close Style*/
+.uk-modal-dialog {
+    width: 800px;
+}
+
+
+button.uk-modal-close-default.uk-close.uk-icon {
+    background: transparent;
+}
+
+.cd-timeline-img {
+    box-shadow: none !important;
+}
+
+
+/* Modal Button Stylw*/
+button.uk-align-center.uk-button.uk-button-default {
+    background: #00257B;
+    color: white;
+    padding: 10px 52px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+button.uk-align-center.uk-button.uk-button-default:hover {
+    background: #91D401;
+}
+
+
+
+/* Goals
+----------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+    div#our-goals {
+        background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../../uploads/2018/01/shutterstock_116677738-01.jpg) !important;
+    }
+}
+
+
+div#our-goals h3 {
+    color: #172f8a;
+}
+
+div#our-goals p {
+    color: #333;
+}
+
+
+/* Company Formation (TablePress)
+----------------------------------------------------------*/
+
+div#company-tp>div>div {
+    margin: 0 20px;
+}
+
+table#tablepress-company-formation>thead>tr>th.column-1 {
+    border-radius: 5px 0 0 0;
+}
+
+table#tablepress-company-formation>thead>tr>th.column-13 {
+    border-radius: 0 5px 0 0;
+}
+
+:lang(en-US)>#secretary-plan-border td.column-2 {
+    border-left: #dddddd 1px solid;
+}
+
+:lang(en-US)>#secretary-plan-border td.column-1 {
+    min-width: 430px !important;
+}
+
+
+
+/* Proice
+----------------------------------------------------------*/
+
+#list-style li {
+    list-style: none;
+}
+
+.mobile-slide li {
+    list-style: none;
+}
+
+/* Table */
+#price-table li {
+    list-style: none;
+}
+
+
+ul.uk-subnav.uk-subnav-pill {
+    border-bottom: .5px solid #dfdfdf;
+    margin-left: 0px;
+}
+
+.uk-subnav-pill>.uk-active>a {
+    border-radius: 5px 5px 0 0;
+}
+
+
+
+#price-table .tablepress td {
+    text-align: center !important;
+}
+
+#price-table td.column-1 {
+    text-align: left !important;
+}
+
+.tablepress th {
+    background-color: #1776ed !important;
+    color: #fff;
+}
+
+div#price-table .tablepress th {
+    border-radius: 5px 5px 0 0;
+    text-align: center !important;
+}
+
+table#tablepress-vop-2 th,
+table#tablepress-123 th.column-2 {
+    text-align: center;
+}
+
+/* Widget */
+@media only screen and (min-width:600px) {
+    div#secondary {
+        margin-top: 345px;
+    }
+
+    div#inpage-banner.widgets,
+    #corporate-services-banner.widgets {
+        /*padding-right: 30% !important;*/
+    }
+
+    div#inpage-banner {
+        padding: 100px 0 !important;
+    }
+}
+
+
+
+.widget-photo {
+    background-image: url(../../uploads/2018/02/widget-photo.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 30px 5px 10px;
+}
+
+.widget-photo h4 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.widget-photo a {
+    color: #fff;
+    font-weight: 200;
+    font-family: initial;
+}
+
+/* Information */
+
+h3.widget-title {
+    background: #182f8a;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0px !important;
+}
+
+aside#custom_html-5 .textwidget.custom-html-widget,
+aside#custom_html-10 .textwidget.custom-html-widget,
+aside#custom_html-12 .textwidget.custom-html-widget {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #e5e5e5;
+    padding: 10px;
+}
+
+
+
+li.uk-active {
+    padding: 0px !important;
+}
+
+.uk-nav-divider {
+    padding: 10px 0 0 0 !important;
+}
+
+.uk-nav-parent-icon>.uk-parent>a::after {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /*IE*/
+    filter: FlipH;
+}
+
+
+
+.textwidget.custom-html-widget .widgets-form {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #e5e5e5;
+    padding: 10px;
+    background: #f8f8f8;
+}
+
+
+
+div#secondary textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 100px;
+}
+
+form.wpcf7-form input.wpcf7-form-control.wpcf7-submit {
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-tel {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+.wpcf7-tel,
+textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 100%;
+}
+
+p.button {
+    text-align: center;
+}
+
+
+.uk-panel-scrollable {
+    height: 100%;
+    border: none;
+    padding: 0;
+}
+
+
+
+/* Services Company Incorporation
+----------------------------------------------------------*/
+h2.inpage {
+    color: #1776ED;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+div#services h2.point {
+    font-weight: 400;
+    color: #012F5E;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-top: 0px;
+    font-size: 24px !important;
+}
+
+@media (max-width: 740px) {
+    div#services h2.point {
+        font-size: 18px;
+    }
+
+    div#services h3 {
+        margin: 0;
+    }
+}
+
+
+div#services h3 {
+    font-weight: 400;
+    color: #012F5E;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    display: flex;
+}
+
+
+div#services p {
+    font-weight: 400;
+    color: #76828a;
+    letter-spacing: 0px;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 0px !important;
+}
+
+
+div#services li {
+    list-style: none;
+    display: flex;
+}
+
+/* Read More */
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+//.read-more-state ~ .read-more-trigger:before {
+content: 'æŸ¥çœ‹æ›´å¤š';
+}
+
+//.read-more-state:checked ~ .read-more-trigger:before {
+content: 'éš±è—è³‡è¨Š';
+}
+
+.read-more-trigger {
+    color: #00257B;
+    text-transform: uppercase;
+}
+
+
+.read-more-trigger:hover {
+    color: #91D401;
+}
+
+font.no {
+    color: #91D401;
+    padding-right: 10px;
+    font-weight: 500;
+    float: left !important;
+}
+
+.long-text font.no {
+    padding-bottom: 30px;
+}
+
+/* Registration Process */
+ul.process-chart>div {
+    padding-right: 0px;
+    margin: 0px;
+}
+
+#services ol,
+ul,
+.uk-grid>* {
+    padding-left: 0px;
+}
+
+div#precautions h6 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+div#precautions li {
+    list-style: decimal;
+}
+
+div#precautions p {
+    font-weight: 400;
+    margin-top: 0px;
+    padding-right: 30px !important;
+}
+
+/* Taiwan - Registration Process */
+
+h3.point {
+    font-size: 20px !important;
+    margin-right: 40px;
+}
+
+div#property {
+    margin-bottom: 50px;
+}
+
+
+/* Step */
+ul.process-chart>div {
+    counter-increment: item;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 1em 1em 1em -1em;
+    min-width: 11.25em;
+    padding: 1em 1em 1em 2em;
+}
+
+ul.process-chart>div:before,
+ul.process-chart>div>div:before {
+    color: #91D401;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+ul.process-chart>div:before {
+    content: 'Step';
+    display: inline-block;
+    font-weight: 300;
+    left: 2em;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 1em;
+    transform: rotate(90deg);
+    transform-origin: 25% 50%;
+}
+
+ul.process-chart>div {
+    position: relative;
+}
+
+ul.process-chart div>h2 {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-weight: 400;
+    display: flex;
+}
+
+ul.process-chart div>h2>font.no {
+    float: left;
+    /*margin-right: 10px;*/
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-top: -3px;
+}
+
+ul.process-chart div>h2>font.title {
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #000;
+}
+
+
+p.property-project {
+    color: #878787;
+    margin-left: 46px;
+}
+
+
+/* Company Secretary Incorporation
+----------------------------------------------------------*/
+#pgc-836-1-0,
+#pgc-882-1-0,
+#pgc-925-1-0 {
+    align-self: center !important;
+}
+
+div#services>div {
+    align-self: center !important;
+}
+
+/* Button */
+.uk-button-default {
+    background: #00257B;
+    color: white;
+    padding: 10px 45px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.uk-button-default:hover {
+    background: #91D401;
+    color: #fff;
+}
+
+/* Button PC & Mobile */
+@media only screen and (min-width:600px) {
+    .button-mobile-slide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .button-pc-slide {
+        display: none;
+    }
+}
+
+
+/* Photo */
+@media only screen and (min-width:1000px) {
+    img.photo-01 {
+        margin-top: -200px;
+        width: 400px;
+        margin-left: -70px;
+    }
+}
+
+/* Icon */
+i.fa.fa-angle-double-right {
+    padding-right: 15px;
+}
+
+/* Fee Schedule */
+a.uk-button-default {
+    color: #fff !important;
+}
+
+.entry-content h5 {
+    margin-bottom: 0px !important;
+}
+
+
+/* trademark registration
+----------------------------------------------------------*/
+
+@media (max-width: 1000px) and (min-width: 670px) {
+    #services.uk-child-width-1-2\@s>* {
+        width: 49% !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    #services.uk-child-width-1-2\@s>* {
+        width: 100% !important;
+    }
+}
+
+div#property {
+    margin-top: 0px;
+}
+
+/* Icon */
+div#services li:before {
+    content: "\f101";
+    font: normal normal normal 14px/1 FontAwesome;
+    padding-right: 10px;
+}
+
+div#services img {
+    margin-bottom: 8px;
+}
+
+/* Price - tables */
+div#intellectual-property-price th,
+div#intellectual-property-price td {
+    text-align: center !important;
+}
+
+div#intellectual-property-price th.column-1,
+div#intellectual-property-price td.column-1 {
+    text-align: left !important;
+}
+
+/* Intellectual Property
+----------------------------------------------------------*/
+
+.Intellectual ul.process-chart div>h2>font.no {
+    padding-bottom: 90px;
+}
+
+
+/* trademark registration
+----------------------------------------------------------*/
+
+#trademark-monitoring th.column-2,
+#trademark-monitoring th.column-3 {
+    border-radius: 0px;
+}
+
+#trademark-monitoring th.column-1 {
+    border-radius: 5px 0 0 0;
+}
+
+#trademark-monitoring th.column-4 {
+    border-radius: 0 5px 0 0;
+}
+
+.tablepress th,
+.tablepress td {
+    /*white-space:nowrap;*/
+    min-width: 150px;
+}
+
+
+.trademark-registration .uk-scrollspy-inview.uk-animation-scale-down {
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+
+
+/* FNQ
+----------------------------------------------------------*/
+#fnq li {
+    list-style: none;
+}
+
+
+
+
+/* Contact
+----------------------------------------------------------*/
+div#inpage.social {
+    margin-top: -10px;
+}
+
+@media only screen and (max-width:1000px) {
+    div#wpgmza_map {
+        height: 200px !important;
+    }
+
+    h2.inpage {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+}
+
+.uk-card-default {
+    width: 200px;
+}
+
+
+/* Social Media */
+div#inpage.social i {
+    font-size: 18px;
+    padding: 10px;
+}
+
+div#inpage>div>a:hover>i {
+    color: #91d401 !important;
+}
+
+div#inpage>div>a>i.fa.fa-google-plus {
+    color: #dd4b39;
+}
+
+div#inpage>div>a>i.fa.fa-facebook-f {
+    color: #3b5998;
+}
+
+div#inpage>div>a>i.fa.fa-twitter {
+    color: #1da1f2;
+}
+
+div#inpage>div>a>i.fa.fa-linkedin {
+    color: #0077b5;
+}
+
+div#inpage>div>a>i.fa.fa-weixin {
+    color: #7bb32e;
+}
+
+div#inpage>div>a>i.fa.fa-whatsapp {
+    color: #128c7e;
+    padding-left: 0px !important;
+}
+
+
+/* Virtual Office (TablePress)
+----------------------------------------------------------*/
+
+#virtual-price-table li {
+    list-style: none;
+}
+
+@media only screen and (min-width:600px) {
+
+    #virtual-price-table .dataTables_scrollHeadInner,
+    #virtual-price-table table.tablepress {
+        width: 100% !important;
+    }
+}
+
+table#tablepress-vop-p1>tbody>tr.row-7>td {
+    background: #fff;
+}
+
+table#tablepress-vop-p1>tbody>tr.row-12.even>td,
+table#tablepress-vop-2>tbody>tr.row-8.even>td,
+table#tablepress-vop-2>tbody>tr.row-10.even>td {
+    background: #f9f9f9;
+}
+
+.tablepress-id-vop-p1>thead>tr>th.column-1,
+.tablepress-id-vop-2>thead>tr>th.column-1 {
+    border-radius: 5px 0 0 0;
+}
+
+.tablepress-id-vop-p1>thead>tr>th.column-3,
+.tablepress-id-vop-2>thead>tr>th.column-8 {
+    border-radius: 0 5px 0 0;
+}
+
+/*@media only screen and (min-width: 1510px) {#pgc-1639-2-0> .panel-cell-style {padding: 0px 50px !important;}}
+@media only screen and (max-width: 1510px) {#pgc-1639-2-0> .panel-cell-style {padding: 0px 35px !important;}}*/
+
+
+/* Information - Style */
+#virtual-price-table h3 {
+    margin: 0px;
+}
+
+h3.hkd {
+    font-weight: 400;
+    color: #012F5E;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+
+/* Virtual Office Price */
+#office-price td.column-1 {
+    text-align: left !important;
+}
+
+#office-price td {
+    text-align: center;
+}
+
+#office-price input[type=submit] {
+    padding: 10px 20px !important;
+    border-radius: 2px;
+}
+
+
+/* Invention Patent Registration */
+#services .uk-grid {
+    margin: 0px !important;
+}
+
+table#tablepress-22.tablepress tr>th {
+    text-align: center !important;
+}
+
+table#tablepress-22.tablepress td,
+table#tablepress-83.tablepress td {
+    text-align: left !important;
+}
+
+table#tablepress-83.tablepress td.column-1,
+table#tablepress-22.tablepress td.column-1 {
+    border-right: 1px solid #ddd;
+    border-top: 0px;
+}
+
+table#tablepress-22.tablepress tr.row-9>td.column-1 {
+    border-top: 1px solid #ddd !important;
+}
+
+table#tablepress-83.tablepress td.column-2,
+table#tablepress-22.tablepress td.column-2,
+table#tablepress-22.tablepress td.column-3 {
+    border-right: 1px solid #ddd;
+}
+
+
+table#tablepress-22.tablepress td.column-2,
+table#tablepress-81 th,
+table#tablepress-124 th.column-2,
+table#tablepress-113 th,
+table#tablepress-125 th.column-2 {
+    text-align: center !important;
+}
+
+
+/* Registered Patent Price */
+
+table#tablepress-117 td.column-1,
+table#tablepress-117 td.column-2,
+table#tablepress-patent-2 td.column-1,
+table#tablepress-patent-2 td.column-2 {
+    vertical-align: middle;
+    text-align: center !important;
+    border-right: 1px solid #ddd;
+}
+
+/* Domain Price */
+
+table#tablepress-domain tr.row-5,
+table#tablepress-domain tr.row-9,
+table#tablepress-domain tr.row-13,
+table#tablepress-119 tr.row-5,
+table#tablepress-119 tr.row-9,
+table#tablepress-119 tr.row-13,
+table#tablepress-56 tr.row-5,
+table#tablepress-56 tr.row-9,
+table#tablepress-56 tr.row-13 {
+    background-color: #1776ed !important;
+    color: #fff;
+}
+
+table#tablepress-domain tr.row-5:hover>td,
+table#tablepress-domain tr.row-9:hover>td,
+table#tablepress-domain tr.row-13:hover>td,
+table#tablepress-119 tr.row-5:hover>td,
+table#tablepress-119 tr.row-9:hover>td,
+table#tablepress-119 tr.row-13:hover>td,
+table#tablepress-56 tr.row-5:hover>td,
+table#tablepress-56 tr.row-9:hover>td,
+table#tablepress-56 tr.row-13:hover>td {
+    background-color: #1776ed !important;
+    color: #fff;
+}
+
+
+/* Accounting Taxation Price */
+
+div#accounting-button .uk-child-width-1-5.uk-grid>div>a {
+    padding: 10px;
+}
+
+div#accounting-button .uk-child-width-1-5.uk-grid>div:hover>a {
+    text-decoration: none;
+    background: #248cc8;
+    border-bottom: none;
+    color: #fff;
+}
+
+
+/* New Page */
+.blog div#secondary {
+    display: none !important;
+}
+
+.blog #primary {
+    width: 100%;
+}
+
+
+
+/* Download */
+#download .list div {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 10px;
+}
+
+#download .list div:hover {
+    background-color: #f0f0f0;
+}
+
+#download .list div:hover>a {
+    color: #91d401;
+}
+
+
+/* ENG */
+/* Menu */
+ul.sub-menu:lang(en-US) {
+    width: 300px;
+}
+
+ul.sub-menu>li>a:lang(en-US),
+.main-navigation ul ul li:lang(en-US) {
+    width: 100%;
+}
+
+h2.subtitle:lang(en-US),
+.uk-position-center:lang(en-US),
+.service-button:lang(en-US),
+/* About */
+h2#eng.uk-modal-title {
+    letter-spacing: 0px !important;
+}
+
+/* Homepage - Banner */
+:lang(en-US)>#banner-layout .banner-button {
+    letter-spacing: 0px;
+}
+
+/* Homepage - Contact */
+:lang(en-US)>#contact-background h1 {
+    letter-spacing: 3px;
+}
+
+h1:lang(en-US) {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:1200px) {
+    #service-plan .uk-card-body:lang(en-US) {
+        height: 450px;
+    }
+}
+
+#service-plan .uk-card-body:lang(en-US) {
+    height: 370px;
+}
+
+#hongkong-plan .uk-card-body:lang(en-US) {
+    height: 500px !important;
+}
+
+h1.page-title:lang(en-US) {
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+
+
+.uk-grid>*>:last-child:lang(en-US) {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.long-text font.no:lang(en-US) {
+    padding-bottom: 0px;
+}
+
+
+p.property-project:lang(en-US) {
+    margin-top: -20px !important;
+}
+
+
+/* Eng */
+:lang(en-US)>#services li:before,
+:lang(en-US)>font.no {
+    margin-top: 5px;
+}
+
+:lang(en-US)>.trademark-registration .uk-scrollspy-inview.uk-animation-scale-down {
+    padding: 0px;
+}
+
+
+/* Hong Kong */
+
+:lang(en-US)>.read-more-state~.read-more-trigger::before {
+    content: "Read More";
+}
+
+:lang(en-US)>.read-more-state:checked~.read-more-trigger::before {
+    display: none;
+}
+
+
+/* Taxation */
+
+:lang(en-US)>.uk-button-default {
+    letter-spacing: 0px;
+    padding: 10px 0px;
+    min-width: 250px;
+}
+
+
+/* Banner */
+:lang(en-US)>div#banner-layout h2 {
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+:lang(en-US)>div#banner-layout h3 {
+    letter-spacing: 0px;
+    font-size: 30px;
+    text-align: left;
+}
+
+:lang(en-US)>div#banner-layout p {
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+/* Blog */
+body.blog h1:lang(en-US) {
+    letter-spacing: 0px;
+}
+
+
+/* Menu */
+:lang(en-US)>.main-navigation ul li a {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+/* Registration Documents */
+:lang(en) ul.process-chart div>h2>font.title {
+    letter-spacing: 0px;
+}
+
+
+/* Price */
+
+@media (max-width: 980px) {
+    body.responsive #secondary {
+        margin-top: 35px;
+    }
+
+    body.responsive #primary,
+    body.responsive #secondary {
+        width: auto;
+        float: none;
+    }
+}
+
+/* Hide the reCAPTCHA badge */
+.grecaptcha-badge {
+    display: none;
+}
