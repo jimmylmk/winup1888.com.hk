@@ -32,7 +32,7 @@ export default buildConfig({
   },
   db: sqliteAdapter({
     client: {
-      url: process.env.DATABASE_URI || 'file:./accolade-cms.db',
+      url: process.env.DATABASE_URI || 'file:./winyu-cms.db',
       authToken: process.env.DATABASE_AUTH_TOKEN || undefined,
     },
     push: false,
