@@ -1,0 +1,22 @@
+#!/usr/bin/expect -f
+set timeout 25
+
+spawn npm run dev
+
+expect "Ready in" {
+    system "sleep 2 && curl -s http://localhost:3000/zh-HK > /dev/null &"
+}
+
+expect {
+    "rename column" {
+        send "\r"
+        exp_continue
+    }
+    "Accept warnings and push schema to database" {
+        send "y\r"
+        exp_continue
+    }
+    timeout {
+        exit 0
+    }
+}

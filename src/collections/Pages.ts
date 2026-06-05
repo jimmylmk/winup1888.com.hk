@@ -24,6 +24,14 @@ export const Pages: CollectionConfig = {
       },
     },
     {
+      name: 'bannerImage',
+      type: 'upload',
+      relationTo: 'media',
+      admin: {
+        description: '頁面頂部橫幅圖片 (選填，不填將使用預設背景)',
+      },
+    },
+    {
       name: 'shortDescription',
       type: 'textarea',
       localized: true,

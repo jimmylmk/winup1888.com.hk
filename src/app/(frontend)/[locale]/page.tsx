@@ -39,20 +39,20 @@ export default async function LocalizedHomePage(props: PageProps) {
     {
       title: '成立公司，註冊公司，開公司',
       subtitle: '一站式 公司註冊 公司成立 方案',
-      description: '卓遠在香港是一所領先的企業服務有限公司，提供 註冊成立有限公司 服務',
+      description: '天宇國際在香港是一所領先的企業服務有限公司，提供 註冊成立有限公司 服務',
       button1Text: '香港公司註冊',
       button1Link: '/services/hk-company',
       button2Text: '秘書服務',
       button2Link: '/services/company-secretary',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner01.jpg',
+      backgroundImage: '/wp-content/uploads/2017/12/winyu-banner01.jpg',
     }
   ]
 
   const slides = homeData?.slides || fallbackSlides
   const servicesHighlight = homeData?.servicesHighlight || [
-    { title: '香港公司成立', bgImage: '/wp-content/uploads/2017/12/accolade-service01.jpg', link: '/services/hk-company' },
-    { title: '離岸公司成立', bgImage: '/wp-content/uploads/2017/12/accolade-service02-1.jpg', link: '/inquiry?service=hk-company' },
-    { title: '辦公室搬遷通知', bgImage: '/wp-content/uploads/2018/06/accolade-service03.jpg', link: '#about' }
+    { title: '香港公司成立', bgImage: '/wp-content/uploads/2017/12/winyu-service01.jpg', link: '/services/hk-company' },
+    { title: '離岸公司成立', bgImage: '/wp-content/uploads/2017/12/winyu-service02-1.jpg', link: '/inquiry?service=hk-company' },
+    { title: '辦公室搬遷通知', bgImage: '/wp-content/uploads/2018/06/winyu-service03.jpg', link: '#about' }
   ]
 
   const featuredTitle = homeData?.featuredTitle || '重點服務推介'
@@ -76,6 +76,14 @@ export default async function LocalizedHomePage(props: PageProps) {
   const contactTitle = homeData?.contactTitle || '與我們聯絡'
   const contactDesc = homeData?.contactDesc || ''
 
+  const whyImage1Url = homeData?.whyImage1 && typeof homeData.whyImage1 === 'object' && homeData.whyImage1.url 
+    ? homeData.whyImage1.url 
+    : '/wp-content/uploads/2019/03/company-formation-02.png'
+
+  const whyImage2Url = homeData?.whyImage2 && typeof homeData.whyImage2 === 'object' && homeData.whyImage2.url 
+    ? homeData.whyImage2.url 
+    : '/wp-content/uploads/2019/03/company-formation-01.jpg'
+
   // Localized label strings for fixed UI actions
   const uiLabels: Record<string, { learnMore: string, add_to_cart: string, inquire_more: string }> = {
     'zh-HK': { learnMore: '了解更多', add_to_cart: 'Add to Cart 購買', inquire_more: '查詢更多' },
@@ -95,7 +103,7 @@ export default async function LocalizedHomePage(props: PageProps) {
           {servicesHighlight.map((srv: any, idx: number) => (
             <div key={idx} className="servicebox" style={{ flex: '1 1 30%', minWidth: '280px', padding: '0 10px', marginBottom: '20px' }}>
               <div className="uk-inline uk-text-center uk-inline-clip uk-transition-toggle" style={{ width: '100%', position: 'relative', overflow: 'hidden', borderRadius: '4px' }}>
-                <img src={srv.bgImage} alt={srv.title} style={{ width: '100%', display: 'block' }} />
+                <img src={(typeof srv.bgImage === 'object' && srv.bgImage?.url) ? srv.bgImage.url : (typeof srv.bgImage === 'string' ? srv.bgImage : '/wp-content/uploads/2017/12/winyu-service01.jpg')} alt={srv.title} style={{ width: '100%', display: 'block' }} />
                 <div className="uk-position-center" style={{ color: '#ffffff', fontSize: '20px', fontWeight: 'bold', letterSpacing: '3px', textShadow: '0 2px 4px rgba(0,0,0,0.8)', width: '100%', padding: '0 10px' }}>
                   {srv.title}
                 </div>
@@ -165,12 +173,12 @@ export default async function LocalizedHomePage(props: PageProps) {
                 
                 {aIdx === 0 && (
                   <p style={{ textAlign: 'center', margin: '25px 0' }}>
-                    <img src="/wp-content/uploads/2019/03/company-formation-02.png" alt="Company Formation Strategy" style={{ maxWidth: '100%', height: 'auto' }} />
+                    <img src={whyImage1Url} alt="Company Formation Strategy" style={{ maxWidth: '100%', height: 'auto' }} />
                   </p>
                 )}
                 {aIdx === 1 && (
                   <p style={{ textAlign: 'center', margin: '25px 0' }}>
-                    <img src="/wp-content/uploads/2019/03/company-formation-01.jpg" alt="Setup Company Easiness" style={{ maxWidth: '100%', height: 'auto', borderRadius: '4px' }} />
+                    <img src={whyImage2Url} alt="Setup Company Easiness" style={{ maxWidth: '100%', height: 'auto', borderRadius: '4px' }} />
                   </p>
                 )}
               </React.Fragment>

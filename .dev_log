@@ -1,0 +1,19 @@
+
+> winyu-cms@1.0.0 dev
+> cross-env NODE_OPTIONS=--no-deprecation next dev
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.124.42:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1541ms
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 669ms (826 modules)
+[⣷] Pulling schema from database...
+[2K[1G[✓] Pulling schema from database...
+[?25l
+Is background_image_id column in home_page_slides table created or renamed from another column?
+❯ + background_image_id                    create column
+  ~ background_image › background_image_id rename column ○ Compiling /_not-found ...

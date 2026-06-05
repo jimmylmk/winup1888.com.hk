@@ -191,6 +191,10 @@ export interface Service {
    * 用於網頁 URL，例如：hk-company-incorporation
    */
   slug: string;
+  /**
+   * 頁面頂部橫幅圖片 (選填，不填將使用預設背景)
+   */
+  bannerImage?: (number | null) | Media;
   shortDescription: string;
   content: {
     root: {
@@ -207,6 +211,8 @@ export interface Service {
     };
     [k: string]: unknown;
   };
+  metaTitle?: string | null;
+  metaDescription?: string | null;
   /**
    * 參考價格 (港幣 HKD)，留空表示「請諮詢我們」
    */
@@ -282,6 +288,10 @@ export interface Page {
    * 網址路徑，例如：about-us
    */
   slug: string;
+  /**
+   * 頁面頂部橫幅圖片 (選填，不填將使用預設背景)
+   */
+  bannerImage?: (number | null) | Media;
   shortDescription?: string | null;
   /**
    * 頁面徽章/小標題 (選填，如：專業顧問對接)
@@ -491,8 +501,11 @@ export interface MediaSelect<T extends boolean = true> {
 export interface ServicesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
+  bannerImage?: T;
   shortDescription?: T;
   content?: T;
+  metaTitle?: T;
+  metaDescription?: T;
   price?: T;
   icon?: T;
   ctaText?: T;
@@ -536,6 +549,7 @@ export interface BlogPostsSelect<T extends boolean = true> {
 export interface PagesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
+  bannerImage?: T;
   shortDescription?: T;
   badge?: T;
   features?:
@@ -628,6 +642,10 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
 export interface SiteSetting {
   id: number;
   companyName: string;
+  /**
+   * 網站標誌 (Logo)
+   */
+  logoImage?: (number | null) | Media;
   logoText?: string | null;
   email: string;
   phone: string;
@@ -702,16 +720,19 @@ export interface HomePage {
         button2Text?: string | null;
         button2Link?: string | null;
         /**
-         * 圖片路徑，例如：/wp-content/uploads/2017/12/accolade-banner01.jpg
+         * 背景圖片 (不選擇則使用預設圖片)
          */
-        backgroundImage?: string | null;
+        backgroundImage?: (number | null) | Media;
         id?: string | null;
       }[]
     | null;
   servicesHighlight?:
     | {
         title: string;
-        bgImage: string;
+        /**
+         * 背景圖片 (不選擇則使用預設圖片)
+         */
+        bgImage?: (number | null) | Media;
         link: string;
         id?: string | null;
       }[]
@@ -773,6 +794,14 @@ export interface HomePage {
   aboutContent?: string | null;
   whyTitle?: string | null;
   whyContent?: string | null;
+  /**
+   * 「成立公司簡單」圖片 (對應預設的 company-formation-01.jpg)
+   */
+  whyImage1?: (number | null) | Media;
+  /**
+   * 「成立策略」圖片 (對應預設的 company-formation-02.png)
+   */
+  whyImage2?: (number | null) | Media;
   advantagesTitle?: string | null;
   advantages?:
     | {
@@ -801,6 +830,7 @@ export interface HomePage {
  */
 export interface SiteSettingsSelect<T extends boolean = true> {
   companyName?: T;
+  logoImage?: T;
   logoText?: T;
   email?: T;
   phone?: T;
@@ -925,6 +955,8 @@ export interface HomePageSelect<T extends boolean = true> {
   aboutContent?: T;
   whyTitle?: T;
   whyContent?: T;
+  whyImage1?: T;
+  whyImage2?: T;
   advantagesTitle?: T;
   advantages?:
     | T

@@ -23,6 +23,14 @@ export const Services: CollectionConfig = {
       },
     },
     {
+      name: 'bannerImage',
+      type: 'upload',
+      relationTo: 'media',
+      admin: {
+        description: '頁面頂部橫幅圖片 (選填，不填將使用預設背景)',
+      },
+    },
+    {
       name: 'shortDescription',
       type: 'textarea',
       required: true,
@@ -32,6 +40,16 @@ export const Services: CollectionConfig = {
       name: 'content',
       type: 'richText',
       required: true,
+      localized: true,
+    },
+    {
+      name: 'metaTitle',
+      type: 'text',
+      localized: true,
+    },
+    {
+      name: 'metaDescription',
+      type: 'textarea',
       localized: true,
     },
     {

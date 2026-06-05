@@ -21,9 +21,10 @@ export const HomePage: GlobalConfig = {
         { name: 'button2Link', type: 'text' },
         { 
           name: 'backgroundImage', 
-          type: 'text', 
+          type: 'upload', 
+          relationTo: 'media',
           admin: { 
-            description: '圖片路徑，例如：/wp-content/uploads/2017/12/accolade-banner01.jpg' 
+            description: '背景圖片 (不選擇則使用預設圖片)' 
           } 
         },
       ],
@@ -36,7 +37,12 @@ export const HomePage: GlobalConfig = {
       maxRows: 3,
       fields: [
         { name: 'title', type: 'text', required: true },
-        { name: 'bgImage', type: 'text', required: true },
+        { 
+          name: 'bgImage', 
+          type: 'upload', 
+          relationTo: 'media',
+          admin: { description: '背景圖片 (不選擇則使用預設圖片)' } 
+        },
         { name: 'link', type: 'text', required: true },
       ],
     },
@@ -120,7 +126,7 @@ export const HomePage: GlobalConfig = {
         { name: 'moreLink', type: 'text' },
       ],
     },
-    // About Accolade
+    // About Winyu
     {
       name: 'aboutTitle',
       type: 'text',
@@ -141,6 +147,22 @@ export const HomePage: GlobalConfig = {
       name: 'whyContent',
       type: 'textarea',
       localized: true,
+    },
+    {
+      name: 'whyImage1',
+      type: 'upload',
+      relationTo: 'media',
+      admin: {
+        description: '「成立公司簡單」圖片 (對應預設的 company-formation-01.jpg)',
+      },
+    },
+    {
+      name: 'whyImage2',
+      type: 'upload',
+      relationTo: 'media',
+      admin: {
+        description: '「成立策略」圖片 (對應預設的 company-formation-02.png)',
+      },
     },
     // Advantages
     {

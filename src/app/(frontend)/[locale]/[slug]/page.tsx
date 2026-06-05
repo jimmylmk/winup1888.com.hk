@@ -11,6 +11,35 @@ interface PageProps {
   }>
 }
 
+export async function generateMetadata(props: PageProps) {
+  const { locale, slug } = await props.params
+  const payload = await getPayload({ config })
+
+  try {
+    const pageQuery = await payload.find({
+      collection: 'pages',
+      locale: locale as any,
+      where: { slug: { equals: slug }, isActive: { equals: true } },
+      limit: 1,
+    })
+    const pageDoc = pageQuery.docs[0]
+    
+    const settings = await payload.findGlobal({
+      slug: 'site-settings',
+      locale: locale as any,
+    })
+
+    if (pageDoc) {
+      return {
+        title: (pageDoc as any).metaTitle || `${pageDoc.title} | ${settings.companyName}`,
+        description: (pageDoc as any).metaDescription || pageDoc.shortDescription || '',
+      }
+    }
+  } catch (e) {}
+
+  return { title: 'Winyu Group' }
+}
+
 // Robust Lexical Rich Text Renderer (consistent with services/page)
 function RichTextRenderer({ content }: { content: any }) {
   if (!content || !content.root || !content.root.children) return null
@@ -149,9 +178,14 @@ export default async function DynamicGeneralPage(props: PageProps) {
   
   const badgeText = pageDoc.badge
   const features = (pageDoc as any).features || []
+  const bannerImageUrl = (pageDoc as any).bannerImage && typeof (pageDoc as any).bannerImage === 'object' && (pageDoc as any).bannerImage.url ? (pageDoc as any).bannerImage.url : null;
 
   return (
-    <div className="general-page-container" style={{ background: '#ffffff', padding: '40px 25px', borderRadius: '4px', border: '1px solid #e5e5e5', marginBottom: '30px' }}>
+    <>
+      {bannerImageUrl && (
+        <div style={{ width: '100%', height: '300px', backgroundImage: `url(${bannerImageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center', marginBottom: '30px' }}></div>
+      )}
+      <div className="general-page-container" style={{ background: '#ffffff', padding: '40px 25px', borderRadius: '4px', border: '1px solid #e5e5e5', marginBottom: '30px' }}>
       <div className="container">
         {/* Breadcrumb / Back button */}
         <Link href={`/${locale}`} className="back-link" style={{ display: 'inline-flex', alignItems: 'center', marginBottom: '20px', color: '#1776ed', fontSize: '14px' }}>
@@ -193,5 +227,6 @@ export default async function DynamicGeneralPage(props: PageProps) {
         </div>
       </div>
     </div>
+    </>
   )
 }

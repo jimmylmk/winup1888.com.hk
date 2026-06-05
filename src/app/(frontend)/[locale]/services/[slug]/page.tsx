@@ -11,6 +11,35 @@ interface PageProps {
   }>
 }
 
+export async function generateMetadata(props: PageProps) {
+  const { locale, slug } = await props.params
+  const payload = await getPayload({ config })
+
+  try {
+    const serviceQuery = await payload.find({
+      collection: 'services',
+      locale: locale as any,
+      where: { slug: { equals: slug }, isActive: { equals: true } },
+      limit: 1,
+    })
+    const serviceDoc = serviceQuery.docs[0]
+    
+    const settings = await payload.findGlobal({
+      slug: 'site-settings',
+      locale: locale as any,
+    })
+
+    if (serviceDoc) {
+      return {
+        title: (serviceDoc as any).metaTitle || `${serviceDoc.title} | ${settings.companyName}`,
+        description: (serviceDoc as any).metaDescription || serviceDoc.shortDescription || '',
+      }
+    }
+  } catch (e) {}
+
+  return { title: 'Winyu Group' }
+}
+
 // Robust Lexical Rich Text Renderer
 function RichTextRenderer({ content }: { content: any }) {
   if (!content || !content.root || !content.root.children) return null
@@ -135,8 +164,14 @@ export default async function ServiceDetailPage(props: PageProps) {
   }
 
   const text = wording[locale] || wording['zh-HK']
+  
+  const bannerImageUrl = (service as any).bannerImage && typeof (service as any).bannerImage === 'object' && (service as any).bannerImage.url ? (service as any).bannerImage.url : null;
 
   return (
+    <>
+      {bannerImageUrl && (
+        <div style={{ width: '100%', height: '300px', backgroundImage: `url(${bannerImageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center', marginBottom: '30px' }}></div>
+      )}
     <div className="service-detail-container">
       <div className="container">
         {/* Breadcrumb / Back button */}
@@ -179,5 +214,6 @@ export default async function ServiceDetailPage(props: PageProps) {
         </div>
       </div>
     </div>
+    </>
   )
 }

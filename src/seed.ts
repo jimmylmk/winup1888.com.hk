@@ -691,22 +691,20 @@ const homeDataHK = {
     {
       title: '成立公司，註冊公司，開公司',
       subtitle: '一站式 公司註冊 公司成立 方案',
-      description: '卓遠在香港是一所領先的企業服務有限公司，提供 註冊成立有限公司 服務',
+      description: '天宇國際在香港是一所領先的企業服務有限公司，提供 註冊成立有限公司 服務',
       button1Text: '香港公司註冊',
       button1Link: '/services/hk-company',
       button2Text: '秘書服務',
       button2Link: '/services/company-secretary',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner01.jpg',
     },
     {
       title: '一站式最經濟及高效率的知識產權解決方案',
       subtitle: '',
-      description: '卓遠在香港是首十大的知識產權註冊服務代理公司，提供全球性的商標、外觀設計、專利及域名註冊及各服務',
+      description: '天宇國際在香港是首十大的知識產權註冊服務代理公司，提供全球性的商標、外觀設計、專利及域名註冊及各服務',
       button1Text: '商標註冊',
       button1Link: '/services/trademark-ip',
       button2Text: '',
       button2Link: '',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner02.jpg',
     },
     {
       title: '價格透明',
@@ -716,23 +714,19 @@ const homeDataHK = {
       button1Link: '#about',
       button2Text: '',
       button2Link: '',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner03.jpg',
     },
   ],
   servicesHighlight: [
     {
       title: '香港公司成立',
-      bgImage: '/wp-content/uploads/2017/12/accolade-service01.jpg',
       link: '/services/hk-company',
     },
     {
       title: '離岸公司成立',
-      bgImage: '/wp-content/uploads/2017/12/accolade-service02-1.jpg',
       link: '/inquiry?service=hk-company',
     },
     {
       title: '辦公室搬遷通知',
-      bgImage: '/wp-content/uploads/2018/06/accolade-service03.jpg',
       link: '#about',
     },
   ],
@@ -924,7 +918,7 @@ const homeDataHK = {
   ],
   aboutTitle: '公司成立 註冊公司 香港有限公司成立 開公司 一站式方案',
   aboutContent:
-    '卓遠企業服務有限公司提供專業 公司成立 服務。價格透明，收費均為全包費用。卓遠在香港是一所領先的企業服務有限公司，提供在岸及離岸 公司註冊 服務及各企業服務。網頁內所列出的 成立公司 收費已包括全程官費、代理費、文件費和常規雜費。',
+    '天宇國際企業服務有限公司提供專業 公司成立 服務。價格透明，收費均為全包費用。天宇國際在香港是一所領先的企業服務有限公司，提供在岸及離岸 公司註冊 服務及各企業服務。網頁內所列出的 成立公司 收費已包括全程官費、代理費、文件費和常規雜費。',
   whyTitle: '為何選擇在香港 成立公司 註冊公司 ？',
   whyContent:
     '如今許多投資者和企業家選擇在海外，特別是在香港這樣的司法管轄區，註冊公司、開展業務。香港被認為是建立 and 經營企業的最佳城市之一。它擁有良好的戰略位置，富有成效的勞動力，穩定的經濟和政治環境，有吸引力的稅收制度，親商的環境，世界一流的基礎設施 and 有效的法律制度。這些因素對企業的成立和發展至關重要，利於更快地融入國際市場。',
@@ -981,7 +975,7 @@ const homeDataHK = {
   ],
   contactTitle: '與我們聯絡',
   contactDesc:
-    '如有任何有關公司成立或企業服務問題，請諮詢我們的專家，我們樂意解答，您可以致電+852 3521 2888 或 電郵至 info@accoladegroup.com.hk',
+    '如有任何有關公司成立或企業服務問題，請諮詢我們的專家，我們樂意解答，您可以致電+852 3521 2888 或 電郵至 info@winyugroup.com.hk',
 }
 
 // Simplified Chinese Homepage Seed Data
@@ -990,22 +984,20 @@ const homeDataCN = {
     {
       title: '成立公司，注册公司，开公司',
       subtitle: '一站式 公司注册 公司成立 方案',
-      description: '卓远在香港是一所领先的企业服务有限公司，提供 注册成立有限公司 服务',
+      description: '天宇国际在香港是一所领先的企业服务有限公司，提供 注册成立有限公司 服务',
       button1Text: '香港公司注册',
       button1Link: '/services/hk-company',
       button2Text: '秘书服务',
       button2Link: '/services/company-secretary',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner01.jpg',
     },
     {
       title: '一站式最经济及高效率的知识产权解决方案',
       subtitle: '',
-      description: '卓远在香港是首十大的知识产权注册服务代理公司，提供全球性的商标、外观设计、专利及域名注册及各服务',
+      description: '天宇国际在香港是首十大的知识产权注册服务代理公司，提供全球性的商标、外观设计、专利及域名注册及各服务',
       button1Text: '商标注册',
       button1Link: '/services/trademark-ip',
       button2Text: '',
       button2Link: '',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner02.jpg',
     },
     {
       title: '价格透明',
@@ -1015,23 +1007,19 @@ const homeDataCN = {
       button1Link: '#about',
       button2Text: '',
       button2Link: '',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner03.jpg',
     },
   ],
   servicesHighlight: [
     {
       title: '香港公司成立',
-      bgImage: '/wp-content/uploads/2017/12/accolade-service01.jpg',
       link: '/services/hk-company',
     },
     {
       title: '离岸公司成立',
-      bgImage: '/wp-content/uploads/2017/12/accolade-service02-1.jpg',
       link: '/inquiry?service=hk-company',
     },
     {
       title: '办公室搬迁通知',
-      bgImage: '/wp-content/uploads/2018/06/accolade-service03.jpg',
       link: '#about',
     },
   ],
@@ -1223,7 +1211,7 @@ const homeDataCN = {
   ],
   aboutTitle: '公司成立 注册公司 香港有限公司成立 开公司 一站式方案',
   aboutContent:
-    '卓远企业服务有限公司提供专业 公司成立 服务。价格透明，收费均为全包费用。卓远在香港是一所领先的企业服务有限公司，提供在岸及离岸 公司注册 服务及各企业服务。网页内所列出的 成立公司 收费已包括全程官费、代理费、文件费和常规杂费。',
+    '天宇国际企业服务有限公司提供专业 公司成立 服务。价格透明，收费均为全包费用。天宇国际在香港是一所领先的企业服务有限公司，提供在岸及离岸 公司注册 服务及各企业服务。网页内所列出的 成立公司 收费已包括全程官费、代理费、文件费和常规杂费。',
   whyTitle: '为何选择在香港 成立公司 注册公司 ？',
   whyContent:
     '如今许多投资者和企业家选择在海外，特别是在香港这样的司法管辖区，注册公司、开展业务。香港被认为是建立和经营企业的最佳城市之一。它拥有良好的战略位置，富有成效的劳动力，稳定的经济和政治环境，有吸引力的税收制度，亲商的环境，世界一流 Infrastructure 和有效的法律制度。这些因素对企业的成立和发展至关重要，利于更快地融入国际市场。',
@@ -1280,7 +1268,7 @@ const homeDataCN = {
   ],
   contactTitle: '与我们联络',
   contactDesc:
-    '如有任何有关公司成立或企业服务问题，请咨询我们的专家，我们乐意解答，您可以致电+852 3521 2888 或 电邮至 info@accoladegroup.com.hk',
+    '如有任何有关公司成立或企业服务问题，请咨询我们的专家，我们乐意解答，您可以致电+852 3521 2888 或 电邮至 info@winyugroup.com.hk',
 }
 
 // English Homepage Seed Data
@@ -1290,23 +1278,21 @@ const homeDataEN = {
       title: 'Incorporate, Register, Setup Company',
       subtitle: 'One-stop Company Setup Solutions',
       description:
-        'Accolade is a leading corporate service provider in Hong Kong, offering limited company setup services.',
+        'Winyu is a leading corporate service provider in Hong Kong, offering limited company setup services.',
       button1Text: 'Hong Kong Setup',
       button1Link: '/services/hk-company',
       button2Text: 'Secretary Services',
       button2Link: '/services/company-secretary',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner01.jpg',
     },
     {
       title: 'Cost-effective and High-efficiency Intellectual Property Solutions',
       subtitle: '',
       description:
-        'Accolade IP is one of the top ten trademark registration agencies in Hong Kong, offering global trademark, design, patent, and domain registrations.',
+        'Winyu IP is one of the top ten trademark registration agencies in Hong Kong, offering global trademark, design, patent, and domain registrations.',
       button1Text: 'Trademark Registry',
       button1Link: '/services/trademark-ip',
       button2Text: '',
       button2Link: '',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner02.jpg',
     },
     {
       title: 'Transparent Pricing',
@@ -1317,23 +1303,19 @@ const homeDataEN = {
       button1Link: '#about',
       button2Text: '',
       button2Link: '',
-      backgroundImage: '/wp-content/uploads/2017/12/accolade-banner03.jpg',
     },
   ],
   servicesHighlight: [
     {
       title: 'HK Company Setup',
-      bgImage: '/wp-content/uploads/2017/12/accolade-service01.jpg',
       link: '/services/hk-company',
     },
     {
       title: 'Offshore Company Setup',
-      bgImage: '/wp-content/uploads/2017/12/accolade-service02-1.jpg',
       link: '/inquiry?service=hk-company',
     },
     {
       title: 'Office Relocation Notice',
-      bgImage: '/wp-content/uploads/2018/06/accolade-service03.jpg',
       link: '#about',
     },
   ],
@@ -1525,7 +1507,7 @@ const homeDataEN = {
   ],
   aboutTitle: 'Company Registry, Incorporation, Setup - One-stop Solutions',
   aboutContent:
-    'Accolade Corporate Services Limited provides professional company incorporation services. Our prices are transparent and fully inclusive. We are a leading corporate services company in Hong Kong, providing on-shore and off-shore company registration. The prices shown include all official fees, filing fees, preparation fees, and courier handling fees.',
+    'Winyu Corporate Services Limited provides professional company incorporation services. Our prices are transparent and fully inclusive. We are a leading corporate services company in Hong Kong, providing on-shore and off-shore company registration. The prices shown include all official fees, filing fees, preparation fees, and courier handling fees.',
   whyTitle: 'Why Choose Hong Kong to Register and Set Up Your Company?',
   whyContent:
     'Today, many investors and entrepreneurs choose to set up companies overseas, especially in business-friendly jurisdictions like Hong Kong. HK is recognized as one of the best cities for establishing and running a business. It features a strategic location, productive workforce, economic/political stability, attractive tax regimes, world-class infrastructure, and a trusted common law system.',
@@ -1587,7 +1569,7 @@ const homeDataEN = {
   ],
   contactTitle: 'Contact Us',
   contactDesc:
-    'For any questions about company setup or corporate services, please consult our experts. We are happy to help! You can call +852 3521 2888 or email info@accoladegroup.com.hk',
+    'For any questions about company setup or corporate services, please consult our experts. We are happy to help! You can call +852 3521 2888 or email info@winyugroup.com.hk',
 }
 
 const navigationMenuHK = [
@@ -1596,7 +1578,7 @@ const navigationMenuHK = [
     link: '/'
   },
   {
-    label: '關於卓遠',
+    label: '關於天宇國際',
     link: '/about-us',
     subMenuItems: [
       { label: '遠景和核心價值', link: '/about-us' },
@@ -1698,7 +1680,7 @@ const navigationMenuCN = [
     link: '/'
   },
   {
-    label: '关于卓远',
+    label: '关于天宇国际',
     link: '/about-us',
     subMenuItems: [
       { label: '远景和核心价值', link: '/about-us' },
@@ -1800,7 +1782,7 @@ const navigationMenuEN = [
     link: '/'
   },
   {
-    label: 'About Accolade',
+    label: 'About Winyu',
     link: '/about-us',
     subMenuItems: [
       { label: 'Vision & Core Values', link: '/about-us' },
@@ -1986,7 +1968,7 @@ async function seed() {
     await payload.create({
       collection: 'users',
       data: {
-        email: 'admin@accoladegroup.com.hk',
+        email: 'admin@winyugroup.com.hk',
         password: 'adminpassword123',
       },
     })
@@ -2086,25 +2068,25 @@ async function seed() {
         en: 'About Us',
       },
       shortDescription: {
-        'zh-HK': '卓遠企業服務成立於2009年，立足香港，服務全球。',
-        'zh-CN': '卓远企业服务成立于2009年，立足香港，服务全球。',
-        en: 'Accolade corporate services was established in 2009, based in Hong Kong, serving global businesses.',
+        'zh-HK': '天宇國際企業服務成立於2009年，立足香港，服務全球。',
+        'zh-CN': '天宇国际企业服务成立于2009年，立足香港，服务全球。',
+        en: 'Winyu corporate services was established in 2009, based in Hong Kong, serving global businesses.',
       },
       content: {
         'zh-HK': createLexicalBody([
-          { type: 'h2', text: '卓遠企業服務有限公司' },
+          { type: 'h2', text: '天宇國際企業服務有限公司' },
           {
             type: 'p',
-            text: '卓遠成立於2009年，我們立足本地，眺望國際，多年來一直爲本地客戶和國際客戶提供一站式、高質量的企業服務及商業方案，是客戶可靠的合作夥伴。卓遠總部位於香港，現已成立北京、新加坡、馬來西亞、澳門和台灣分公司，並在菲律賓、美國、英國、澳大利亞、新西蘭設立代表處，全球員工超過100人。',
+            text: '天宇國際成立於2009年，我們立足本地，眺望國際，多年來一直爲本地客戶和國際客戶提供一站式、高質量的企業服務及商業方案，是客戶可靠的合作夥伴。天宇國際總部位於香港，現已成立北京、新加坡、馬來西亞、澳門和台灣分公司，並在菲律賓、美國、英國、澳大利亞、新西蘭設立代表處，全球員工超過100人。',
           },
           {
             type: 'p',
-            text: '作為一所行業領先的知識產權註冊服務代理公司，卓遠能為您提供全球商標、版權、外觀設計、專利、域名註冊等註冊服務。經過十餘年的努力，卓遠在知識產權行業積累了豐富的實踐經驗，組建了一支專業且功底深厚的知識產權專家團隊，是您知識產權保護的信心之選。',
+            text: '作為一所行業領先的知識產權註冊服務代理公司，天宇國際能為您提供全球商標、版權、外觀設計、專利、域名註冊等註冊服務。經過十餘年的努力，天宇國際在知識產權行業積累了豐富的實踐經驗，組建了一支專業且功底深厚的知識產權專家團隊，是您知識產權保護的信心之選。',
           },
           { type: 'h2', text: '辦理公司成立註冊' },
           {
             type: 'p',
-            text: '卓遠還專門為客戶在各主要司法管轄區香港、英屬維京群島(BVI)、薩摩亞、開曼群島、馬來西亞納閩島、塞舌爾群島、美國德拉瓦(特拉華州)、新加坡等辦理公司成立註冊事宜。',
+            text: '天宇國際還專門為客戶在各主要司法管轄區香港、英屬維京群島(BVI)、薩摩亞、開曼群島、馬來西亞納閩島、塞舌爾群島、美國德拉瓦(特拉華州)、新加坡等辦理公司成立註冊事宜。',
           },
           { type: 'h2', text: '管理及商貿服務' },
           { type: 'li', text: '公司秘書服務' },
@@ -2116,19 +2098,19 @@ async function seed() {
           { type: 'li', text: '銀行賬戶代理服務' },
         ]),
         'zh-CN': createLexicalBody([
-          { type: 'h2', text: '卓远企业服务有限公司' },
+          { type: 'h2', text: '天宇国际企业服务有限公司' },
           {
             type: 'p',
-            text: '卓远成立于2009年，我们立足本地，眺望国际，多年来一直为本地客户和国际客户提供一站式、高质量的企业服务及商业方案，是客户可靠合作伙伴。卓远总部位于香港，现已成立北京、新加坡、马来西亚、澳门和台湾分公司，并在菲律宾、美国、英国、澳大利亚、新西兰设立代表处，全球员工超过100人。',
+            text: '天宇国际成立于2009年，我们立足本地，眺望国际，多年来一直为本地客户和国际客户提供一站式、高质量的企业服务及商业方案，是客户可靠合作伙伴。天宇国际总部位于香港，现已成立北京、新加坡、马来西亚、澳门和台湾分公司，并在菲律宾、美国、英国、澳大利亚、新西兰设立代表处，全球员工超过100人。',
           },
           {
             type: 'p',
-            text: '作为一所行业领先的知识产权注册服务代理公司，卓远能为您提供全球商标、版权、外观设计、专利、域名注册等注册服务。经过十余年的努力，卓远在知识产权行业积累了丰富的实践经验，组建了一支专业且功底深厚的知识产权专家团队，是您知识产权保护的信心之选。',
+            text: '作为一所行业领先的知识产权注册服务代理公司，天宇国际能为您提供全球商标、版权、外观设计、专利、域名注册等注册服务。经过十余年的努力，天宇国际在知识产权行业积累了丰富的实践经验，组建了一支专业且功底深厚的知识产权专家团队，是您知识产权保护的信心之选。',
           },
           { type: 'h2', text: '办理公司成立注册' },
           {
             type: 'p',
-            text: '卓远还专门为客户在各主要司法管辖区香港、英属维京群岛(BVI)、萨摩亚、开曼群岛、马来西亚纳闽岛、塞舌尔群岛、美国德拉瓦(特拉华州)、新加坡等办理公司成立注册事宜。',
+            text: '天宇国际还专门为客户在各主要司法管辖区香港、英属维京群岛(BVI)、萨摩亚、开曼群岛、马来西亚纳闽岛、塞舌尔群岛、美国德拉瓦(特拉华州)、新加坡等办理公司成立注册事宜。',
           },
           { type: 'h2', text: '管理及商贸服务' },
           { type: 'li', text: '公司秘书服务' },
@@ -2140,14 +2122,14 @@ async function seed() {
           { type: 'li', text: '银行账户代理服务' },
         ]),
         en: createLexicalBody([
-          { type: 'h2', text: 'Accolade Corporate Services Limited' },
+          { type: 'h2', text: 'Winyu Corporate Services Limited' },
           {
             type: 'p',
-            text: 'Established in 2009, Accolade is based locally with a global outlook, providing one-stop high-quality corporate services and business solutions to local and international clients. Headquartered in Hong Kong, we have branches in Beijing, Singapore, Malaysia, Macau, and Taiwan, and representative offices in the Philippines, US, UK, Australia, and New Zealand, with over 100 staff worldwide.',
+            text: 'Established in 2009, Winyu is based locally with a global outlook, providing one-stop high-quality corporate services and business solutions to local and international clients. Headquartered in Hong Kong, we have branches in Beijing, Singapore, Malaysia, Macau, and Taiwan, and representative offices in the Philippines, US, UK, Australia, and New Zealand, with over 100 staff worldwide.',
           },
           {
             type: 'p',
-            text: 'As a leading intellectual property agent, Accolade provides global trademark, copyright, design, patent, and domain name registration. With over a decade of practice, our experienced team of IP specialists is your trusted choice for brand protection.',
+            text: 'As a leading intellectual property agent, Winyu provides global trademark, copyright, design, patent, and domain name registration. With over a decade of practice, our experienced team of IP specialists is your trusted choice for brand protection.',
           },
           { type: 'h2', text: 'Company Incorporation & Setup' },
           {
@@ -2293,9 +2275,9 @@ async function seed() {
     slug: 'site-settings',
     locale: 'zh-HK',
     data: {
-      companyName: '卓遠集團 ACCOLADE',
-      logoText: 'ACCOLADE',
-      email: 'info@accoladegroup.com.hk',
+      companyName: '天宇國際集團 WINYU',
+      logoText: 'WINYU',
+      email: 'info@winyugroup.com.hk',
       phone: '+852 3521 2888',
       whatsapp: 'https://wa.me/85235212888',
       whatsappDisplay: '+852 9428 9422',
@@ -2322,7 +2304,7 @@ async function seed() {
     slug: 'site-settings',
     locale: 'zh-CN',
     data: {
-      companyName: '卓远集团 ACCOLADE',
+      companyName: '天宇国际集团 WINYU',
       hkAddress: '香港上环皇后大道中181号大新行24楼06室',
       szAddress: '深圳市福田区深南大道2008号 Kerry Plaza 2座15楼',
       whatsappDisplay: '+852 9428 9422',
@@ -2347,7 +2329,7 @@ async function seed() {
     slug: 'site-settings',
     locale: 'en',
     data: {
-      companyName: 'ACCOLADE GROUP',
+      companyName: 'WINYU GROUP',
       hkAddress: "Unit 2406, 24/F, Grand Millennium Plaza, 181 Queen's Road Central, Sheung Wan, Hong Kong",
       szAddress: '15/F, Tower 2, Kerry Plaza, 2008 Shennan Boulevard, Futian District, Shenzhen, China',
       whatsappDisplay: '+852 9428 9422',

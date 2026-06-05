@@ -11,18 +11,26 @@ export const SiteSettings: GlobalConfig = {
       type: 'text',
       required: true,
       localized: true,
-      defaultValue: 'ACCOLADE',
+      defaultValue: 'WINYU',
+    },
+    {
+      name: 'logoImage',
+      type: 'upload',
+      relationTo: 'media',
+      admin: {
+        description: '網站標誌 (Logo)',
+      },
     },
     {
       name: 'logoText',
       type: 'text',
-      defaultValue: 'ACCOLADE',
+      defaultValue: 'WINYU',
     },
     {
       name: 'email',
       type: 'text',
       required: true,
-      defaultValue: 'info@accoladegroup.com.hk',
+      defaultValue: 'info@winyugroup.com.hk',
     },
     {
       name: 'phone',

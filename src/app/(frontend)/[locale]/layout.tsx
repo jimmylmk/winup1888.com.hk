@@ -28,7 +28,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     }
   } catch (e) {
     return {
-      title: 'Accolade Group | 一站式公司註冊及成立公司方案',
+      title: 'Winyu Group | 一站式公司註冊及成立公司方案',
     }
   }
 }
@@ -60,11 +60,15 @@ export default async function LocalizedLayout(props: LayoutProps) {
     locale: locale as any,
   })
 
+  const logoUrl = settings.logoImage && typeof settings.logoImage === 'object' && settings.logoImage.url
+    ? settings.logoImage.url
+    : '/logo.png'
+
   // Dynamic Navigation Translations
   const navTitles: Record<string, any> = {
     'zh-HK': {
       home: '主頁',
-      about: '關於卓遠',
+      about: '關於天宇國際',
       vision: '遠景和核心價值',
       contact: '聯絡我們',
       incorporation: '公司註冊',
@@ -117,7 +121,7 @@ export default async function LocalizedLayout(props: LayoutProps) {
     },
     'zh-CN': {
       home: '主页',
-      about: '关于卓远',
+      about: '关于天宇国际',
       vision: '远景和核心价值',
       contact: '联络我们',
       incorporation: '公司注册',
@@ -170,7 +174,7 @@ export default async function LocalizedLayout(props: LayoutProps) {
     },
     'en': {
       home: 'Home',
-      about: 'About Accolade',
+      about: 'About Winyu',
       vision: 'Vision & Core Values',
       contact: 'Contact Us',
       incorporation: 'Company Setup',
@@ -226,8 +230,10 @@ export default async function LocalizedLayout(props: LayoutProps) {
   const translations = navTitles[locale] || navTitles['zh-HK']
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -236,18 +242,18 @@ export default async function LocalizedLayout(props: LayoutProps) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js" defer></script>
       </head>
-      <body className="home page-template page-template-home-panels page-template-home-panels-php page siteorigin-panels layout-full">
+      <body suppressHydrationWarning className="home page-template page-template-home-panels page-template-home-panels-php page siteorigin-panels layout-full">
         <div id="page-wrapper">
           {/* Header */}
           <header id="masthead" className="site-header" role="banner">
             <div className="hgroup full-container">
               <Link href={`/${locale}`} className="logo">
                 <img
-                  src="/wp-content/uploads/2017/12/accolade-logo.png"
+                  src={logoUrl}
                   className="logo-height-constrain"
-                  width="1000"
-                  height="303"
-                  alt="Accolade Group Logo"
+                  width="800"
+                  height="272"
+                  alt={`${settings.companyName} Logo`}
                   style={{ display: 'block', maxWidth: '300px', height: 'auto' }}
                 />
               </Link>
@@ -630,10 +636,10 @@ export default async function LocalizedLayout(props: LayoutProps) {
                       <a href="https://www.facebook.com/companysetting/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '4px', backgroundColor: '#3b5998', color: '#ffffff' }}>
                         <i className="fa fa-facebook"></i>
                       </a>
-                      <a href="https://twitter.com/AccoladeIP" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '4px', backgroundColor: '#1da1f2', color: '#ffffff' }}>
+                      <a href="https://twitter.com/WinyuIP" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '4px', backgroundColor: '#1da1f2', color: '#ffffff' }}>
                         <i className="fa fa-twitter"></i>
                       </a>
-                      <a href="https://www.linkedin.com/company/accolade-intellectual-property-limited/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '4px', backgroundColor: '#0077b5', color: '#ffffff' }}>
+                      <a href="https://www.linkedin.com/company/winyu-intellectual-property-limited/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '4px', backgroundColor: '#0077b5', color: '#ffffff' }}>
                         <i className="fa fa-linkedin"></i>
                       </a>
                     </div>

@@ -4,7 +4,6 @@ import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
-
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Services } from './collections/Services'
@@ -27,14 +26,16 @@ export default buildConfig({
   collections: [Users, Media, Services, Inquiries, BlogPosts, Pages],
   globals: [SiteSettings, HomePage],
   editor: lexicalEditor(),
-  secret: process.env.PAYLOAD_SECRET || 'accolade-secret-key-12345',
+  secret: process.env.PAYLOAD_SECRET || 'winyu-secret-key-12345',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
   db: sqliteAdapter({
     client: {
       url: process.env.DATABASE_URI || 'file:./accolade-cms.db',
+      authToken: process.env.DATABASE_AUTH_TOKEN || undefined,
     },
+    push: false,
   }),
   localization: {
     locales: [

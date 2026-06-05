@@ -1,4 +1,4 @@
-/* 100% Cloned Visual Aesthetics for Accolade CMS */
+/* 100% Cloned Visual Aesthetics for Winyu CMS */
 
 :root {
   /* Brand Colors from Vantage Child Theme */
@@ -310,7 +310,7 @@ ul.sub-menu > li.menu-item-has-children > a::after {
 /* Banner / Slider representation */
 .banner-slider {
   background-color: #333333;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/wp-content/uploads/2017/12/accolade-banner01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/wp-content/uploads/2017/12/winyu-banner01.jpg);
   background-position: center center;
   background-size: cover;
   min-height: 400px;

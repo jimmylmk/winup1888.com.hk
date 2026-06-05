@@ -32,8 +32,12 @@ export default function HomeSlider({ slides, locale, ui }: { slides: any[]; loca
         primary: false
       })
     }
+    const bgImageUrl = slide.backgroundImage && typeof slide.backgroundImage === 'object' && slide.backgroundImage.url 
+      ? slide.backgroundImage.url 
+      : '/wp-content/uploads/2017/12/winyu-banner01.jpg'
+
     return {
-      img: slide.backgroundImage || '/wp-content/uploads/2017/12/accolade-banner01.jpg',
+      img: bgImageUrl,
       title: slide.title,
       subtitle: slide.subtitle,
       desc: slide.description,
