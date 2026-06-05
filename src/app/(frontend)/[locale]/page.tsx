@@ -101,14 +101,24 @@ export default async function LocalizedHomePage(props: PageProps) {
       <div id="service-button" style={{ padding: '40px 0' }}>
         <div className="uk-grid uk-grid-small uk-child-width-1-3@s" style={{ display: 'flex', flexWrap: 'wrap', margin: '0 -10px' }}>
           {servicesHighlight.map((srv: any, idx: number) => (
-            <div key={idx} className="servicebox" style={{ flex: '1 1 30%', minWidth: '280px', padding: '0 10px', marginBottom: '20px' }}>
+            <div key={idx} className="servicebox service-box-col" style={{ flex: '1 1 30%', minWidth: '280px', padding: '0 10px', marginBottom: '20px' }}>
               <div className="uk-inline uk-text-center uk-inline-clip uk-transition-toggle" style={{ width: '100%', position: 'relative', overflow: 'hidden', borderRadius: '4px' }}>
                 <img src={(typeof srv.bgImage === 'object' && srv.bgImage?.url) ? srv.bgImage.url : (typeof srv.bgImage === 'string' ? srv.bgImage : '/wp-content/uploads/2017/12/winyu-service01.jpg')} alt={srv.title} style={{ width: '100%', display: 'block' }} />
                 <div className="uk-position-center" style={{ color: '#ffffff', fontSize: '20px', fontWeight: 'bold', letterSpacing: '3px', textShadow: '0 2px 4px rgba(0,0,0,0.8)', width: '100%', padding: '0 10px' }}>
                   {srv.title}
                 </div>
                 <div className="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle" style={{ backgroundColor: 'rgba(34,34,34,0.7)', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Link className="service-button" href={srv.link.startsWith('/') ? srv.link : `/${locale}${srv.link}`}>
+                  <Link
+                    className="service-learn-more-btn"
+                    href={(() => {
+                      const link = srv.link
+                      if (!link) return `/${locale}`
+                      if (link.startsWith('http://') || link.startsWith('https://') || link.startsWith('#')) return link
+                      const normalized = link.startsWith('/') ? link : `/${link}`
+                      if (normalized.startsWith(`/${locale}/`) || normalized === `/${locale}`) return normalized
+                      return `/${locale}${normalized}`
+                    })()}
+                  >
                     {ui.learnMore}
                   </Link>
                 </div>

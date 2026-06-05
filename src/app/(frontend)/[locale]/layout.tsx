@@ -5,6 +5,7 @@ import Link from 'next/link'
 import config from '@/payload.config'
 import '../styles.css'
 import LanguageSwitcher from './LanguageSwitcher'
+import MobileNav from './MobileNav'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -229,6 +230,44 @@ export default async function LocalizedLayout(props: LayoutProps) {
 
   const translations = navTitles[locale] || navTitles['zh-HK']
 
+  // Build menu items array for MobileNav
+  const mobileMenuItems = settings.navigationMenu && settings.navigationMenu.length > 0
+    ? settings.navigationMenu
+    : [
+        { label: translations.home, link: `/${locale}`, subMenuItems: [] },
+        { label: translations.about, link: `/${locale}/about-us`, subMenuItems: [
+          { label: translations.vision, link: `/${locale}/about-us`, nestedMenuItems: [] },
+          { label: translations.contact, link: `/${locale}/inquiry`, nestedMenuItems: [] },
+        ]},
+        { label: translations.incorporation, link: `/${locale}/services/hk-company`, subMenuItems: [
+          { label: translations.hk_incorporation, link: `/${locale}/services/hk-company`, nestedMenuItems: [
+            { label: translations.hk_files, link: `/${locale}/services/hk-company` },
+            { label: translations.hk_fees, link: `/${locale}/services/hk-company` },
+          ]},
+          { label: translations.cn_incorporation, link: `/${locale}/services/china-company`, nestedMenuItems: [] },
+          { label: translations.sg_incorporation, link: `/${locale}/services/singapore-company`, nestedMenuItems: [] },
+          { label: translations.bvi_incorporation, link: `/${locale}/services/bvi-company`, nestedMenuItems: [] },
+          { label: translations.cayman_incorporation, link: `/${locale}/services/cayman-company`, nestedMenuItems: [] },
+          { label: translations.us_incorporation, link: `/${locale}/services/us-company`, nestedMenuItems: [] },
+        ]},
+        { label: translations.corporate_services, link: `/${locale}/services/company-secretary`, subMenuItems: [
+          { label: translations.secretary, link: `/${locale}/services/company-secretary`, nestedMenuItems: [] },
+          { label: translations.notarization, link: `/${locale}/services/notarization`, nestedMenuItems: [] },
+          { label: translations.bank, link: `/${locale}/services/bank-account`, nestedMenuItems: [] },
+          { label: translations.virtual, link: `/${locale}/services/virtual-office`, nestedMenuItems: [] },
+        ]},
+        { label: translations.accounting, link: `/${locale}/services/accounting-tax`, subMenuItems: [] },
+        { label: translations.ip, link: `/${locale}/services/trademark-ip`, subMenuItems: [
+          { label: translations.trademark, link: `/${locale}/services/trademark-ip`, nestedMenuItems: [] },
+          { label: translations.patent_registration, link: `/${locale}/services/patent-registration`, nestedMenuItems: [] },
+          { label: translations.domain_registration, link: `/${locale}/services/domain-registration`, nestedMenuItems: [] },
+        ]},
+        { label: translations.search, link: `/${locale}/services/business-search`, subMenuItems: [] },
+        { label: translations.faq, link: `/${locale}#faq`, subMenuItems: [] },
+        { label: translations.news, link: `/${locale}/about-us`, subMenuItems: [] },
+      ]
+
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
@@ -247,6 +286,7 @@ export default async function LocalizedLayout(props: LayoutProps) {
           {/* Header */}
           <header id="masthead" className="site-header" role="banner">
             <div className="hgroup full-container">
+              {/* Logo — always left-aligned */}
               <Link href={`/${locale}`} className="logo">
                 <img
                   src={logoUrl}
@@ -258,16 +298,19 @@ export default async function LocalizedLayout(props: LayoutProps) {
                 />
               </Link>
 
+              {/* Header sidebar — desktop: flex row with license/lang/tel/email; mobile: only lang + mobile tel */}
               <div id="header-sidebar">
                 <aside className="widget widget_siteorigin-panels-builder">
-                  <div className="header-sidebar-layout" style={{ display: 'flex', alignItems: 'center', gap: '25px' }}>
-                    <div className="license-text" style={{ fontSize: '13px' }}>
+                  <div className="header-sidebar-layout">
+                    {/* License text — hidden on mobile */}
+                    <div className="license-text header-desktop-only">
                       <a href={settings.licenseLink || "/wp-content/uploads/2024/06/ACSL_TCSP-Licence-2024-2027.pdf"} target="_blank" rel="noopener">
                         {settings.licenseText || translations.license}
                       </a>
                     </div>
                     <LanguageSwitcher currentLocale={locale} />
-                    <div className="hrader-tel" style={{ fontSize: '16px', color: '#002b66', textAlign: 'right', lineHeight: '1.5' }}>
+                    {/* Tel/WhatsApp — desktop shows inline, mobile shows compact */}
+                    <div className="header-tel">
                       <i className="fa fa-phone" aria-hidden="true" style={{ marginRight: '6px' }}></i>
                       <a href={`tel:${settings.phone.replace(/\s+/g, '')}`}>{settings.phone}</a>
                       <br />
@@ -276,7 +319,8 @@ export default async function LocalizedLayout(props: LayoutProps) {
                         {settings.whatsappDisplay || "+852 9428 9422"}
                       </a>
                     </div>
-                    <div className="header-mail" style={{ fontSize: '13px', textAlign: 'right' }}>
+                    {/* Email — hidden on mobile */}
+                    <div className="header-mail header-desktop-only">
                       <Link href={`/${locale}/inquiry`}>{settings.email}</Link>
                     </div>
                   </div>
@@ -284,13 +328,9 @@ export default async function LocalizedLayout(props: LayoutProps) {
               </div>
             </div>
 
-            {/* Sticky Navigation Menu */}
-            <nav role="navigation" className="site-navigation main-navigation primary use-sticky-menu">
+            {/* Desktop sticky navigation — hidden on mobile via CSS */}
+            <nav role="navigation" className="site-navigation main-navigation primary use-sticky-menu so-mobilenav-standard">
               <div className="full-container">
-                <input type="checkbox" id="menu-toggle" className="menu-toggle-checkbox" style={{ display: 'none' }} />
-                <label htmlFor="menu-toggle" className="menu-toggle-label">
-                  <i className="fa fa-bars" style={{ marginRight: '8px' }}></i>{translations.menu || 'Menu'}
-                </label>
                 <ul id="menu-primary" className="menu">
                   {settings.navigationMenu && settings.navigationMenu.length > 0 ? (
                     settings.navigationMenu.map((item: any, idx: number) => {
@@ -506,6 +546,16 @@ export default async function LocalizedLayout(props: LayoutProps) {
                 </ul>
               </div>
             </nav>
+
+            {/* Mobile navigation drawer — visible only on mobile via CSS */}
+            <div className="so-mobilenav-mobile mobile-nav-wrapper">
+              <MobileNav
+                locale={locale}
+                menuItems={mobileMenuItems as any}
+                menuLabel={translations.menu}
+                cartLink={`/${locale}/inquiry`}
+              />
+            </div>
           </header>
 
           {/* Main Body */}
@@ -517,10 +567,10 @@ export default async function LocalizedLayout(props: LayoutProps) {
           <footer id="colophon" className="site-footer" role="contentinfo">
             <div id="footer-widgets" className="full-container">
               <aside className="widget widget_siteorigin-panels-builder">
-                <div className="footer-layout" style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '30px' }}>
+                <div className="footer-layout footer-grid-main">
                   
                   {/* Sitemap and contact details */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                  <div className="footer-sitemap-grid">
                     {settings.navigationMenu && settings.navigationMenu.length > 0 ? (
                       <>
                         <div>
@@ -618,7 +668,7 @@ export default async function LocalizedLayout(props: LayoutProps) {
                 </div>
 
                 {/* Google map iframe and Social Buttons */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '30px', marginTop: '25px', borderTop: '1px solid rgba(255,255,255,0.15)', paddingTop: '25px' }}>
+                <div className="footer-grid-bottom">
                   <div>
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.8047605488605!2d114.15087962632818!3d22.28538442969746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401b2adec8d11%3A0xfe43c7408e20e61a!2z5paw57qq5YWD5buj5Z-4!5e0!3m2!1sen!2smy!4v1732873583872!5m2!1sen!2smy"

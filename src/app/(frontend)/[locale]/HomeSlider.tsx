@@ -18,17 +18,32 @@ export default function HomeSlider({ slides, locale, ui }: { slides: any[]; loca
 
   const formattedSlides = slides.map((slide) => {
     const buttons = []
+
+    const resolveSlideLink = (link: string | undefined) => {
+      if (!link) return `/${locale}`
+      // Absolute URLs, anchors, mailto, tel — use as-is
+      if (link.startsWith('http://') || link.startsWith('https://') || link.startsWith('#') || link.startsWith('mailto:') || link.startsWith('tel:')) {
+        return link
+      }
+      const normalized = link.startsWith('/') ? link : `/${link}`
+      // Already has locale prefix
+      if (normalized.startsWith(`/${locale}/`) || normalized === `/${locale}`) {
+        return normalized
+      }
+      return `/${locale}${normalized}`
+    }
+
     if (slide.button1Text) {
       buttons.push({
         label: slide.button1Text,
-        href: slide.button1Link?.startsWith('/') ? slide.button1Link : `/${locale}${slide.button1Link || ''}`,
+        href: resolveSlideLink(slide.button1Link),
         primary: true
       })
     }
     if (slide.button2Text) {
       buttons.push({
         label: slide.button2Text,
-        href: slide.button2Link?.startsWith('/') ? slide.button2Link : `/${locale}${slide.button2Link || ''}`,
+        href: resolveSlideLink(slide.button2Link),
         primary: false
       })
     }
