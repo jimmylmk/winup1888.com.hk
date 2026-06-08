@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
+    "build": "rm -rf .next && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
     "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
     "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
@@ -13,8 +13,8 @@
     "lint": "cross-env NODE_OPTIONS=--no-deprecation eslint .",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "rm -rf .next .open-next && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "rm -rf .next .open-next && opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "seed": "cross-env NODE_OPTIONS=--no-deprecation tsx src/seed.ts"
   },
   "dependencies": {
