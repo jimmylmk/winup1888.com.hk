@@ -110,7 +110,8 @@ export default async function LocalizedLayout(props: LayoutProps) {
       faq_accounting: '會計及稅務',
       faq_ip: '知識產權',
       news: '最新消息',
-      license: '牌照編號:TC000447',
+      whatsappDisplay: '+852 6693 6776',
+      license: '牌照編號:TC010082',
       sitemap: '網站地圖',
       headquarters: '總部',
       tel: '電話',
@@ -163,7 +164,8 @@ export default async function LocalizedLayout(props: LayoutProps) {
       faq_accounting: '会计及税务',
       faq_ip: '知识产权',
       news: '最新消息',
-      license: '牌照编号:TC000447',
+      whatsappDisplay: '+852 6693 6776',
+      license: '牌照编号:TC010082',
       sitemap: '网站地图',
       headquarters: '总部',
       tel: '电话',
@@ -216,7 +218,8 @@ export default async function LocalizedLayout(props: LayoutProps) {
       faq_accounting: 'Accounting & Tax',
       faq_ip: 'Intellectual Property',
       news: 'Latest News',
-      license: 'Licence No:TC000447',
+      whatsappDisplay: '+852 6693 6776',
+      license: 'Licence No:TC010082',
       sitemap: 'Sitemap',
       headquarters: 'Head Office',
       tel: 'Tel',
@@ -315,8 +318,8 @@ export default async function LocalizedLayout(props: LayoutProps) {
                       <a href={`tel:${settings.phone.replace(/\s+/g, '')}`}>{settings.phone}</a>
                       <br />
                       <i className="fa fa-whatsapp" aria-hidden="true" style={{ marginRight: '6px' }}></i>
-                      <a href={settings.whatsapp || "https://wa.me/85235212888"} target="_blank" rel="noopener noreferrer">
-                        {settings.whatsappDisplay || "+852 9428 9422"}
+                      <a href={settings.whatsapp || "https://wa.me/85266936776"} target="_blank" rel="noopener noreferrer">
+                        {settings.whatsappDisplay || "+852 6693 6776"}
                       </a>
                     </div>
                     {/* Email — hidden on mobile */}

@@ -14,7 +14,8 @@
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "seed": "cross-env NODE_OPTIONS=--no-deprecation tsx src/seed.ts"
   },
   "dependencies": {
     "@payloadcms/db-sqlite": "^3.0.0",

@@ -975,7 +975,7 @@ const homeDataHK = {
   ],
   contactTitle: '與我們聯絡',
   contactDesc:
-    '如有任何有關公司成立或企業服務問題，請諮詢我們的專家，我們樂意解答，您可以致電+852 3521 2888 或 電郵至 info@winyugroup.com.hk',
+    '如有任何有關公司成立或企業服務問題，請諮詢我們的專家，我們樂意解答，您可以致電+852 3110 8633 或 電郵至 info@winyugroup.com.hk',
 }
 
 // Simplified Chinese Homepage Seed Data
@@ -1268,7 +1268,7 @@ const homeDataCN = {
   ],
   contactTitle: '与我们联络',
   contactDesc:
-    '如有任何有关公司成立或企业服务问题，请咨询我们的专家，我们乐意解答，您可以致电+852 3521 2888 或 电邮至 info@winyugroup.com.hk',
+    '如有任何有关公司成立或企业服务问题，请咨询我们的专家，我们乐意解答，您可以致电+852 3110 8633 或 电邮至 info@winyugroup.com.hk',
 }
 
 // English Homepage Seed Data
@@ -1569,7 +1569,7 @@ const homeDataEN = {
   ],
   contactTitle: 'Contact Us',
   contactDesc:
-    'For any questions about company setup or corporate services, please consult our experts. We are happy to help! You can call +852 3521 2888 or email info@winyugroup.com.hk',
+    'For any questions about company setup or corporate services, please consult our experts. We are happy to help! You can call +852 3110 8633 or email info@winyugroup.com.hk',
 }
 
 const navigationMenuHK = [
@@ -2278,16 +2278,16 @@ async function seed() {
       companyName: '天宇國際集團 WINYU',
       logoText: 'WINYU',
       email: 'info@winyugroup.com.hk',
-      phone: '+852 3521 2888',
-      whatsapp: 'https://wa.me/85235212888',
-      whatsappDisplay: '+852 9428 9422',
+      phone: '+852 3110 8633',
+      whatsapp: 'https://wa.me/85266936776',
+      whatsappDisplay: '+852 6693 6776',
       hkAddress: '香港上環皇后大道中181號大新行24樓06室',
       szAddress: '深圳市福田區深南大道2008號嘉里建設廣場2座15樓',
       szPhone: '+86 755 8888 8888',
       szWhatsapp: 'https://wa.me/8613800000000',
       beijingAddress: '北京市朝陽區光華東裡8號中海廣場南樓2層216室',
       singaporeAddress: '10 Anson Road #35-03A International Plaza Singapore 079903',
-      licenseText: '牌照編號:TC000447',
+      licenseText: '牌照編號:TC010082',
       licenseLink: '/wp-content/uploads/2024/06/ACSL_TCSP-Licence-2024-2027.pdf',
       priceLabel: '服務費用',
       serviceCtaFallback: '立即聯絡顧問諮詢',
@@ -2307,12 +2307,12 @@ async function seed() {
       companyName: '天宇国际集团 WINYU',
       hkAddress: '香港上环皇后大道中181号大新行24楼06室',
       szAddress: '深圳市福田区深南大道2008号 Kerry Plaza 2座15楼',
-      whatsappDisplay: '+852 9428 9422',
+      whatsappDisplay: '+852 6693 6776',
       szPhone: '+86 755 8888 8888',
       szWhatsapp: 'https://wa.me/8613800000000',
       beijingAddress: '北京市朝阳区光华东里8号中海广场南楼2层216室',
       singaporeAddress: '10 Anson Road #35-03A International Plaza Singapore 079903',
-      licenseText: '牌照编号:TC000447',
+      licenseText: '牌照编号:TC010082',
       licenseLink: '/wp-content/uploads/2024/06/ACSL_TCSP-Licence-2024-2027.pdf',
       priceLabel: '服务费用',
       serviceCtaFallback: '立即联络顾问咨询',
@@ -2332,12 +2332,12 @@ async function seed() {
       companyName: 'WINYU GROUP',
       hkAddress: "Unit 2406, 24/F, Grand Millennium Plaza, 181 Queen's Road Central, Sheung Wan, Hong Kong",
       szAddress: '15/F, Tower 2, Kerry Plaza, 2008 Shennan Boulevard, Futian District, Shenzhen, China',
-      whatsappDisplay: '+852 9428 9422',
+      whatsappDisplay: '+852 6693 6776',
       szPhone: '+86 755 8888 8888',
       szWhatsapp: 'https://wa.me/8613800000000',
       beijingAddress: 'Room 216, 2/F, South Tower, China Overseas Plaza, 8 Guanghua Dongli, Chaoyang District, Beijing, China',
       singaporeAddress: '10 Anson Road #35-03A International Plaza Singapore 079903',
-      licenseText: 'Licence No:TC000447',
+      licenseText: 'Licence No:TC010082',
       licenseLink: '/wp-content/uploads/2024/06/ACSL_TCSP-Licence-2024-2027.pdf',
       priceLabel: 'Service Fee',
       serviceCtaFallback: 'Contact Consultant Now',

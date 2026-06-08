@@ -36,13 +36,13 @@ export const SiteSettings: GlobalConfig = {
       name: 'phone',
       type: 'text',
       required: true,
-      defaultValue: '+852 3521 2888',
+      defaultValue: '+852 3110 8633',
     },
     {
       name: 'whatsapp',
       type: 'text',
       required: true,
-      defaultValue: 'https://wa.me/85235212888',
+      defaultValue: 'https://wa.me/85266936776',
       admin: {
         description: 'WhatsApp 聯絡連結',
       },
@@ -51,7 +51,7 @@ export const SiteSettings: GlobalConfig = {
       name: 'whatsappDisplay',
       type: 'text',
       required: true,
-      defaultValue: '+852 9428 9422',
+      defaultValue: '+852 6693 6776',
       admin: {
         description: '網頁頂部顯示的 WhatsApp 號碼文字',
       },
@@ -107,7 +107,7 @@ export const SiteSettings: GlobalConfig = {
       type: 'text',
       required: true,
       localized: true,
-      defaultValue: '牌照編號:TC000447',
+      defaultValue: '牌照編號:TC010082',
     },
     {
       name: 'licenseLink',
