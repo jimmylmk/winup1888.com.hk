@@ -658,17 +658,6 @@ export interface SiteSetting {
    */
   whatsappDisplay: string;
   hkAddress: string;
-  szAddress: string;
-  /**
-   * 深圳辦公室電話
-   */
-  szPhone: string;
-  /**
-   * 深圳辦公室 WhatsApp 連結
-   */
-  szWhatsapp: string;
-  beijingAddress: string;
-  singaporeAddress: string;
   licenseText: string;
   licenseLink: string;
   /**
@@ -837,11 +826,6 @@ export interface SiteSettingsSelect<T extends boolean = true> {
   whatsapp?: T;
   whatsappDisplay?: T;
   hkAddress?: T;
-  szAddress?: T;
-  szPhone?: T;
-  szWhatsapp?: T;
-  beijingAddress?: T;
-  singaporeAddress?: T;
   licenseText?: T;
   licenseLink?: T;
   navigationMenu?:

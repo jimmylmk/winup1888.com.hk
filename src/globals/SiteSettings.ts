@@ -64,45 +64,6 @@ export const SiteSettings: GlobalConfig = {
       defaultValue: '上環干諾道中181號大新行24樓06室',
     },
     {
-      name: 'szAddress',
-      type: 'textarea',
-      required: true,
-      localized: true,
-      defaultValue: '深圳市福田區深南大道嘉里建設廣場',
-    },
-    {
-      name: 'szPhone',
-      type: 'text',
-      required: true,
-      defaultValue: '+86 755 8888 8888',
-      admin: {
-        description: '深圳辦公室電話',
-      },
-    },
-    {
-      name: 'szWhatsapp',
-      type: 'text',
-      required: true,
-      defaultValue: 'https://wa.me/8613800000000',
-      admin: {
-        description: '深圳辦公室 WhatsApp 連結',
-      },
-    },
-    {
-      name: 'beijingAddress',
-      type: 'textarea',
-      required: true,
-      localized: true,
-      defaultValue: '北京市朝陽區光華東裡8號中海廣場南樓2層216室',
-    },
-    {
-      name: 'singaporeAddress',
-      type: 'textarea',
-      required: true,
-      localized: true,
-      defaultValue: '10 Anson Road #35-03A International Plaza Singapore 079903',
-    },
-    {
       name: 'licenseText',
       type: 'text',
       required: true,

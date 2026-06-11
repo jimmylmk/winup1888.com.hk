@@ -117,8 +117,6 @@ export default async function LocalizedLayout(props: LayoutProps) {
       tel: '電話',
       fax: '傳真',
       email: '電郵',
-      beijing_office: '中國 - 北京辦事處',
-      singapore_office: '新加坡 – 新加坡辦事處',
       menu: '選單',
     },
     'zh-CN': {
@@ -171,8 +169,6 @@ export default async function LocalizedLayout(props: LayoutProps) {
       tel: '电话',
       fax: '传真',
       email: '电邮',
-      beijing_office: '中国 - 北京办事处',
-      singapore_office: '新加坡 – 新加坡办事处',
       menu: '菜单',
     },
     'en': {
@@ -225,8 +221,6 @@ export default async function LocalizedLayout(props: LayoutProps) {
       tel: 'Tel',
       fax: 'Fax',
       email: 'Email',
-      beijing_office: 'China - Beijing Office',
-      singapore_office: 'Singapore Office',
       menu: 'Menu',
     }
   }
@@ -661,12 +655,6 @@ export default async function LocalizedLayout(props: LayoutProps) {
                     </p>
                     
                     <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.15)', margin: '15px 0' }} />
-                    
-                    <h3 style={{ fontSize: '14px', color: '#ffffff', margin: '8px 0 3px 0' }}>{translations.beijing_office}</h3>
-                    <p style={{ fontSize: '12px', color: '#d1d1d1' }}>{settings.beijingAddress || '北京市朝陽區光華東裡8號中海廣場南樓2層216室'}</p>
-                    
-                    <h3 style={{ fontSize: '14px', color: '#ffffff', margin: '12px 0 3px 0' }}>{translations.singapore_office}</h3>
-                    <p style={{ fontSize: '12px', color: '#d1d1d1' }}>{settings.singaporeAddress || '10 Anson Road #35-03A International Plaza Singapore 079903'}</p>
                   </div>
                 </div>
 

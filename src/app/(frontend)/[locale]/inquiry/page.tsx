@@ -70,7 +70,6 @@ export default async function LocalizedInquiryPage(props: PageProps) {
       f3_t: '透明報價・絕無隱藏收費',
       f3_d: '我們提供公開透明的費用清單，保障您的權益。',
       office_hk: '香港總部',
-      office_sz: '深圳分部',
       whatsapp_btn: 'WhatsApp 諮詢',
       phone_btn: '致電我們',
     },
@@ -85,7 +84,6 @@ export default async function LocalizedInquiryPage(props: PageProps) {
       f3_t: '透明报价・绝无隐藏收费',
       f3_d: '我们提供公开透明的费用清单，保障您的权益。',
       office_hk: '香港总部',
-      office_sz: '深圳分部',
       whatsapp_btn: 'WhatsApp 咨询',
       phone_btn: '致电我们',
     },
@@ -100,7 +98,6 @@ export default async function LocalizedInquiryPage(props: PageProps) {
       f3_t: 'Transparent Pricing & No Hidden Fees',
       f3_d: 'We provide itemized, upfront pricing to ensure absolute peace of mind.',
       office_hk: 'Hong Kong HQ',
-      office_sz: 'Shenzhen Office',
       whatsapp_btn: 'WhatsApp Us',
       phone_btn: 'Call Us',
     }
@@ -192,20 +189,7 @@ export default async function LocalizedInquiryPage(props: PageProps) {
               </div>
             </div>
 
-            <div className="office-card">
-              <div className="office-name">{fallback.office_sz}</div>
-              <div className="office-detail">{settings.szAddress}</div>
-              <div className="office-actions">
-                <a href={settings.szWhatsapp || "https://wa.me/8613800000000"} target="_blank" rel="noreferrer" className="action-link whatsapp">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.335 4.963L2 22l5.233-1.372a9.948 9.948 0 0 0 4.778 1.22c5.507 0 9.99-4.478 9.99-9.986 0-2.67-1.037-5.178-2.924-7.065A9.919 9.919 0 0 0 12.012 2zm5.727 14.126c-.31.874-1.572 1.605-2.187 1.664-.523.051-1.2.083-3.415-.83-2.83-1.168-4.662-4.04-4.803-4.227-.143-.187-1.16-1.536-1.16-2.93 0-1.394.726-2.078 1.004-2.36.27-.274.606-.343.805-.343.199 0 .399.002.573.01.182.008.423-.07.663.507.24.58.823 2.01.895 2.155.07.146.12.316.023.51-.097.193-.146.313-.292.484-.146.172-.307.382-.438.513-.146.146-.3.305-.129.597.172.292.763 1.258 1.636 2.034.872.776 1.608 1.016 1.902 1.162.293.146.463.123.636-.07.172-.193.753-.876.953-1.17.202-.293.402-.246.68-.146.277.098 1.767.834 2.073.987.307.153.51.23.585.36.075.13.075.753-.235 1.628z"/></svg>
-                  <span>{fallback.whatsapp_btn}</span>
-                </a>
-                <a href={`tel:${(settings.szPhone || "+86 755 8888 8888").replace(/\s+/g, '')}`} className="action-link phone">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                  <span>{fallback.phone_btn}</span>
-                </a>
-              </div>
-            </div>
+
           </div>
         </section>
 

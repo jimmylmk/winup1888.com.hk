@@ -90,6 +90,7 @@ export default function InquiryFormClient({ services, locale, formSettings }: Cl
       placeholder_message: '請簡述您的需求，如：預計註冊香港公司的股東人數、是否需要開立銀行帳戶、會計審計的營業額規模等。',
       submit_btn: '送出詢盤資訊',
       submitting: '送出中...',
+      refund_policy: '退款及送貨政策：所有服務不設退款，我們會於購買後廿四小時內有專人回覆。',
       success_title: '提交成功！',
       success_desc: '我們已收到您的詢價申請。專業顧問將在 24 小時內與您聯繫，請保持電話或郵件暢通。',
       success_back: '返回修改',
@@ -116,6 +117,7 @@ export default function InquiryFormClient({ services, locale, formSettings }: Cl
       placeholder_message: '请简述您的需求，如：预计注册香港公司的股东人数、是否需要开立银行账户、会计审计的营业额规模等。',
       submit_btn: '提交询盘信息',
       submitting: '提交中...',
+      refund_policy: '退款及送货政策：所有服务不设退款，我们会在购买后二十四小时内有专人回复。',
       success_title: '提交成功！',
       success_desc: '我们收到您的询价申请。专业顾问将在 24 小时内与您联系，请保持电话或邮件畅通。',
       success_back: '返回修改',
@@ -142,6 +144,7 @@ export default function InquiryFormClient({ services, locale, formSettings }: Cl
       placeholder_message: 'Please briefly describe your needs, e.g. number of shareholders for HK incorporation, bank account opening needs, scale of annual revenue for auditing, etc.',
       submit_btn: 'Submit Inquiry',
       submitting: 'Submitting...',
+      refund_policy: 'Refund & Delivery Policy: All services are non-refundable. Our specialist will reply to you within 24 hours of purchase.',
       success_title: 'Submitted Successfully!',
       success_desc: 'We have received your inquiry. A professional consultant will contact you within 24 hours. Please keep your phone or email available.',
       success_back: 'Back to Edit',
@@ -327,6 +330,10 @@ export default function InquiryFormClient({ services, locale, formSettings }: Cl
           <span>{isSubmitting ? submitting : submitBtn}</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </button>
+
+        <div style={{ marginTop: '15px', fontSize: '13px', color: '#666', lineHeight: '1.5' }}>
+          {text.refund_policy}
+        </div>
       </form>
 
       {/* Success Overlay Screen */}
